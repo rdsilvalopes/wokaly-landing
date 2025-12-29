@@ -17,15 +17,19 @@
   ========================================================== -->
   <header class="site-header">
     <div class="container navbar">
-      <a class="brand" href="#topo">
-        <span class="brand-emoji">🔒</span>
-        <span class="brand-text">Wokaly</span>
+      <a class="brand brand-app" href="#topo" aria-label="Wokaly">
+        <span class="brand-mark" aria-hidden="true">
+          <span class="brand-letter">W</span>
+        </span>
+        <span class="brand-name">Wokaly</span>
       </a>
+
 
       <nav class="nav-links">
         <a href="#o-que-e">O que é</a>
         <a href="#como-funciona">Como funciona</a>
         <a href="#beneficios">Benefícios</a>
+        <a href="#planos">Planos</a>
         <a href="#faq">FAQ</a>
         <span class="chip">B2B</span>
       </nav>
@@ -45,8 +49,9 @@
           <p class="kicker">Leilões de serviços. Transparência. Contratação com governança.</p>
 
           <h1 class="hero-title">
-            Encontre <span class="txt-gradient">Serviços</span> para sua Empresa <br/>
-            com leilões rápidos e fornecedores qualificados
+            Publique sua demanda e escolha o melhor<span class="txt-gradient"> fornecedor
+com leilões</span> rápidos, critérios e transparência
+
           </h1>
 
           <p class="hero-sub">
@@ -256,41 +261,415 @@
   </section>
 
   <!-- =========================================================
-       FAQ
-  ========================================================== -->
-  <section id="faq" class="section">
-    <div class="container">
-      <h2 class="section-title">Dúvidas frequentes</h2>
-      <p class="section-sub">Respostas rápidas sobre o modelo e o fluxo.</p>
+     PLANOS (Empresa x Fornecedor) — com abas + comparação
+========================================================== -->
+<section id="planos" class="section section-light">
+  <div class="container">
+    <h2 class="section-title">Planos</h2>
+    <p class="section-sub">
+      A Wokaly tem visão de negócio para os dois lados: <strong>Empresa</strong> (contrata por demanda com governança)
+      e <strong>Fornecedor</strong> (acesso, limites e visibilidade no Mundo Wokaly).
+    </p>
 
-      <div class="faq-list">
-        <details class="faq-item">
-          <summary>Que tipos de serviços posso contratar?</summary>
-          <p>Qualquer serviço que você consiga descrever em escopo e critérios: recrutamento e seleção, consultoria, treinamentos, projetos, BPO/operacional e outros.</p>
-        </details>
+    <!-- Abas -->
+    <div class="tabs" role="tablist" aria-label="Planos Wokaly">
+      <button class="tab-btn active" type="button" role="tab" aria-selected="true" data-tab="empresa">
+        Para Empresas
+      </button>
+      <button class="tab-btn" type="button" role="tab" aria-selected="false" data-tab="fornecedor">
+        Para Fornecedores
+      </button>
+    </div>
 
-        <details class="faq-item">
-          <summary>Preciso criar conta para publicar uma demanda?</summary>
-          <p><strong>Sim.</strong> Para publicar uma demanda e receber propostas, é necessário criar conta e concluir a trilha de ativação.</p>
-        </details>
+    <!-- Painel Empresa -->
+    <div class="tab-panel active" data-panel="empresa" role="tabpanel">
+      <p class="small-muted" style="margin-top:10px">
+        * Exemplo de precificação (ajuste conforme sua tabela oficial).
+      </p>
 
-        <details class="faq-item">
-          <summary>Como a Wokaly garante a qualidade dos fornecedores?</summary>
-          <p>Por trilhas de licenciamento, regras mínimas e histórico do fornecedor na plataforma. A curadoria evolui com reputação e evidências.</p>
-        </details>
+      <div class="pricing-grid pricing-grid-empresa">
+        <article class="pricing-card">
+          <div class="plan-top">
+            <div class="plan-name">Empresa Basic</div>
+            <div class="plan-desc">Comece aqui e colha os benefícios.</div>
+          </div>
 
-        <details class="faq-item">
-          <summary>Existe assinatura?</summary>
-          <p>Existem planos para fornecedores com acesso e visibilidade (ex.: Premium/Pro). Para empresas, o foco é contratação por demanda — sem “custo fixo” para começar.</p>
-        </details>
+          <div class="plan-price">
+            <span class="price">R$ 179</span>
+            <span class="period">/ mês</span>
+          </div>
+          <div class="plan-note">Plano para pequenas empresas terem acesso.</div>
 
-        <details class="faq-item">
-          <summary>Como funciona contrato e pagamento?</summary>
-          <p>O fluxo de contratação e documentação já é estruturado. A camada de pagamentos (cobrança/repasse) está em evolução e será integrada conforme a operação financeira amadurecer.</p>
-        </details>
+          <a class="btn btn-primary btn-lg btn-block" href="https://app.wokaly.com/">Assinar Basic</a>
+
+          <ul class="plan-features">
+            <li><span class="check">✓</span> Publicar demandas (categorias)</li>
+            <li><span class="check">✓</span> Receber e comparar propostas</li>
+            <li><span class="check">✓</span> Dashboard de andamento</li>
+          </ul>
+        </article>
+
+        <article class="pricing-card">
+          <div class="plan-top">
+            <div class="plan-name">Empresa Pro</div>
+            <div class="plan-desc">Para times ou filiais e controle.</div>
+          </div>
+
+          <div class="plan-price">
+            <span class="price">R$ 249</span>
+            <span class="period">/ mês</span>
+          </div>
+          <div class="plan-note">Plano para médias empresas terem acesso.</div>
+
+          <a class="btn btn-primary btn-lg btn-block" href="https://app.wokaly.com/">Assinar Pro</a>
+
+          <ul class="plan-features">
+            <li><span class="check">✓</span> Mais demandas ativas simultâneas</li>
+            <li><span class="check">✓</span> Equipe e permissões completas</li>
+            <li><span class="check">✓</span> Templates e critérios de seleção</li>
+          </ul>
+        </article>
+
+        <article class="pricing-card featured">
+          <div class="plan-top">
+            <div class="plan-name">Empresa Premium</div>
+            <div class="plan-desc">Governança máxima e operação em escala.</div>
+          </div>
+
+          <div class="plan-price">
+            <span class="price">R$ 399</span>
+            <span class="period">/ mês</span>
+          </div>
+          <div class="plan-note">Plano para grandes empresas terem acesso.</div>
+
+          <a class="btn btn-primary btn-lg btn-block" href="https://app.wokaly.com/">Assinar Premium</a>
+
+          <ul class="plan-features">
+            <li><span class="check">✓</span> Limites ampliados (volume)</li>
+            <li><span class="check">✓</span> Trilhas e evidências por contrato</li>
+            <li><span class="check">✓</span> Suporte premium e priorização</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="compare-wrap" role="region" aria-label="Comparação de planos para Empresas" tabindex="0">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th class="col-feature">Recursos</th>
+              <th>Empresa Basic</th>
+              <th>Empresa Pro</th>
+              <th class="col-featured">Empresa Premium</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Publicar demandas</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td class="yes col-featured">✓</td>
+            </tr>
+            <tr>
+              <td>Leilões ilimitados</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td class="yes col-featured">✓</td>
+            </tr>
+            <tr>
+              <td>Leilões ativos simultâneos</td>
+              <td>4</td>
+              <td>6</td>
+              <td class="col-featured">10</td>
+            </tr>
+            <tr>
+              <td>Equipe (membros) e permissões</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td class="yes col-featured">✓</td>
+            </tr>
+            <tr>
+              <td>Templates / padrões de SLA</td>
+              <td class="no">—</td>
+              <td class="yes">✓</td>
+              <td class="yes col-featured">✓</td>
+            </tr>
+            <tr>
+              <td>Gestão de contrato e evidências</td>
+              <td class="no">—</td>
+              <td>Parcial</td>
+              <td class="yes col-featured">✓</td>
+            </tr>
+            <tr>
+              <td>Suporte</td>
+              <td>Padrão</td>
+              <td>Prioritário</td>
+              <td class="col-featured">Premium</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
-  </section>
+
+    <!-- Painel Fornecedor -->
+    <div class="tab-panel" data-panel="fornecedor" role="tabpanel" hidden>
+      <p class="small-muted" style="margin-top:10px">
+        * Exemplo de precificação (ajuste conforme sua tabela oficial).
+      </p>
+
+      <div class="pricing-grid">
+        <article class="pricing-card">
+          <div class="plan-top">
+            <div class="plan-name">Basic</div>
+            <div class="plan-desc">Entrada para começar a participar.</div>
+          </div>
+
+          <div class="plan-price">
+            <span class="price">R$ 99</span>
+            <span class="period">/ mês</span>
+          </div>
+          <div class="plan-note">Ajuste o preço conforme sua regra oficial.</div>
+
+          <a class="btn btn-primary btn-lg btn-block" href="https://app.wokaly.com/">Assinar Basic</a>
+
+          <ul class="plan-features">
+            <li><span class="check">✓</span> Ver oportunidades no Mundo Wokaly</li>
+            <li><span class="check">✓</span> Participar de leilões (limite básico)</li>
+            <li><span class="check">✓</span> Acesso a todas as demandas básicas</li>
+            <li><span class="check">✓</span> Perfil e licenciamento dentro da plataforma</li>
+          </ul>
+        </article>
+
+        <article class="pricing-card">
+          <div class="plan-top">
+            <div class="plan-name">Pro</div>
+            <div class="plan-desc">Para fornecedores que querem crescer.</div>
+          </div>
+
+          <div class="plan-price">
+            <span class="price">R$ 149</span>
+            <span class="period">/ mês</span>
+          </div>
+          <div class="plan-note">Exemplo. Ajuste valores e limites.</div>
+
+          <a class="btn btn-primary btn-lg btn-block" href="https://app.wokaly.com/">Assinar Pro</a>
+
+          <ul class="plan-features">
+            <li><span class="check">✓</span> Mais participações ativas e propostas</li>
+            <li><span class="check">✓</span> Formatos de vitrine (Simple / Rich)</li>
+            <li><span class="check">✓</span> Acesso a demandas mais qualificadas.</li>
+            <li><span class="check">✓</span> Suporte priorizado</li>
+          </ul>
+        </article>
+
+        <article class="pricing-card featured">
+          <div class="plan-top">
+            <div class="plan-name">Premium</div>
+            <div class="plan-desc">Máximo acesso e visibilidade.</div>
+          </div>
+
+          <div class="plan-price">
+            <span class="price">R$ 299</span>
+            <span class="period">/ mês</span>
+          </div>
+          <div class="plan-note">Exemplo. Ajuste conforme sua tabela.</div>
+
+          <a class="btn btn-primary btn-lg btn-block" href="https://app.wokaly.com/">Assinar Premium</a>
+
+          <ul class="plan-features">
+            <li><span class="check">✓</span> Acesso completo (inclui Central de Leilões - filtros, pesquisas)</li>
+            <li><span class="check">✓</span> Maior destaque no Mundo Wokaly (Compact / Hero)</li>
+            <li><span class="check">✓</span> Acesso a demandas premium com destaque.</li>
+            <li><span class="check">✓</span> Limites ampliados + suporte premium</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="compare-wrap" role="region" aria-label="Comparação de planos para Fornecedores" tabindex="0">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th class="col-feature">Recursos</th>
+              <th>Basic</th>
+              <th>Pro</th>
+              <th class="col-featured">Premium</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ver leilões no Mundo Wokaly</td>
+              <td class="yes">✓</td>
+              <td class="yes">✓</td>
+              <td class="yes col-featured">✓</td>
+            </tr>
+            <tr>
+              <td>Enviar propostas / lances por leilão</td>
+              <td>8</td>
+              <td class="yes">15</td>
+              <td class="yes col-featured">30</td>
+            </tr>
+            <tr>
+              <td>Participações ativas simultâneas</td>
+              <td>3</td>
+              <td>6</td>
+              <td class="col-featured">10</td>
+            </tr>
+            <tr>
+              <td>Formatos na vitrine (Mundo Wokaly)</td>
+              <td>Mini</td>
+              <td>Mini, Simple e Rich</td>
+              <td class="col-featured">Mini, Simple, Rich, Compact e Hero</td>
+            </tr>
+            <tr>
+              <td>Acesso à Leilões Premium</td>
+              <td>—</td>
+              <td>—</td>
+              <td class="yes col-featured">✓</td>
+            </tr>
+            <tr>
+              <td>Acesso à Central de Leilões</td>
+              <td class="no">—</td>
+              <td class="no">—</td>
+              <td class="yes col-featured">✓</td>
+            </tr>
+            <tr>
+              <td>Equipe (membros) e permissões</td>
+              <td>Completo</td>
+              <td>Completo</td>
+              <td class="col-featured">Completo</td>
+            </tr>
+            <tr>
+              <td>Suporte</td>
+              <td>Padrão</td>
+              <td>Prioritário</td>
+              <td class="col-featured">Premium</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- =========================================================
+     FAQ (Atualizada — modelo amplo: serviços + leilões)
+========================================================== -->
+<section id="faq" class="section">
+  <div class="container">
+    <h2 class="section-title">Dúvidas frequentes</h2>
+    <p class="section-sub">Respostas objetivas sobre como a Wokaly funciona para Empresas e Fornecedores.</p>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>O que exatamente é a Wokaly?</summary>
+        <p>
+          A Wokaly é um marketplace B2B que conecta empresas a fornecedores de serviços por meio de leilões.
+          A empresa publica uma demanda com escopo e critérios; fornecedores enviam propostas; a empresa compara, escolhe e acompanha a execução em um dashboard.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Quais profissionais ou empresas podem ser fornecedores?</summary>
+        <p>
+          Qualquer profissional seja ele Recrutador/Headhunter, Consultor TI, Qualidade, Segurança, Finanças, qualquer consultoria 
+          que se aplica a uma empresa, e empresas de Consultoria em geral. Exemplo: consultoria de treinamentos corporativos ou auditoria. 
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Sou empresa: quais tipos de serviços posso contratar no leilão?</summary>
+        <p>
+          Qualquer serviço que você consiga descrever em escopo e critérios. Exemplos: Recrutamento &amp; Seleção,
+          Consultoria, Treinamento, Projetos, BPO/Operação e outros serviços profissionais por categoria.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Sou empresa: preciso criar conta para publicar uma demanda?</summary>
+        <p>
+          Sim. Para publicar, receber propostas e manter histórico e evidências, é necessário criar conta
+          e concluir a trilha de ativação (dados da organização e documentos, quando aplicável).
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Sou fornecedor: como eu vejo os leilões e participo?</summary>
+        <p>
+          Você descobre oportunidades no <strong>Mundo Wokaly</strong> (vitrine pública). Para participar,
+          precisa ter seu perfil completo e estar com a organização licenciada na plataforma.
+          O plano (Basic/Pro/Premium) define limites, acesso e visibilidade.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Como a Wokaly controla qualidade e segurança?</summary>
+        <p>
+          Com trilhas de licenciamento (empresa e fornecedor), regras mínimas para participação, histórico dentro da plataforma
+          e rastreabilidade do processo (propostas, mensagens, decisões e execução). A curadoria evolui com reputação e evidências.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Como funciona a escolha do fornecedor e a contratação?</summary>
+        <p>
+          No leilão a empresa define o escopo, preço, SLA e critérios definidos. No término do leilão a empresa escolhe 
+          a melhor proposta preço. A empresa escolhe o vencedor e entra em contato diretamente com o fornecedor. Todo
+          o processo segue com formalização e acompanhamento pela plataforma, mantendo histórico e transparência.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Sou empresa: sou obrigado a escolher um fornecedor vencedor ao término do leilão?</summary>
+        <p>
+          Não. Você pode publicar a sua demanda no leilão para avaliar preços, buscar orçamentos e encerrar o leilão sem escolher um vencedor.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Como funcionam os planos e preços?</summary>
+        <p>
+          Existem planos para <strong>Empresas</strong> e para <strong>Fornecedores</strong>. Para empresas, os planos normalmente evoluem
+          em limites, governança e recursos de gestão. Para fornecedores, os planos determinam acesso, limites e formatos de vitrine no Mundo Wokaly.
+          Consulte a seção <strong>Planos</strong> para a visão completa.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Pagamento e repasse já estão prontos?</summary>
+        <p>
+          A Wokaly já organiza o fluxo de contratação e governança. A camada de pagamentos (cobrança/repasse)
+          pode ser integrada e evoluída conforme a estratégia financeira e regulatória da operação (ex.: split, garantia, conciliação).
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Consigo usar a Wokaly com meu time?</summary>
+        <p>
+          Sim. A plataforma foi desenhada para operação multiusuário por organização (owner/admin/membro) e, quando aplicável,
+          por unidades/filiais — com regras de acesso e permissões.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>O que é a Central de Leilões?</summary>
+        <p>
+          A Central de Leilões é uma área completa de pesquisa avançada com diversos filtros do leilão. Está 
+          disponível para os Fornecedores que são assinantes premium.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Qual é o próximo passo para começar?</summary>
+        <p>
+          Se você é <strong>Empresa</strong>, publique sua primeira demanda. Se você é <strong>Fornecedor</strong>, complete seu perfil,
+          finalize o licenciamento e escolha o plano adequado para participar e ganhar visibilidade.
+        </p>
+      </details>
+    </div>
+  </div>
+</section>
+
 
   <!-- =========================================================
        FOOTER
@@ -306,5 +685,33 @@
       </p>
     </div>
   </footer>
+
+  <script>
+  (function(){
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const panels = document.querySelectorAll('.tab-panel');
+
+    function setTab(name){
+      tabButtons.forEach(btn => {
+        const active = btn.getAttribute('data-tab') === name;
+        btn.classList.toggle('active', active);
+        btn.setAttribute('aria-selected', active ? 'true' : 'false');
+      });
+
+      panels.forEach(p => {
+        const show = p.getAttribute('data-panel') === name;
+        p.hidden = !show;
+        p.classList.toggle('active', show);
+      });
+    }
+
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => setTab(btn.getAttribute('data-tab')));
+    });
+
+    setTab('empresa'); // default
+  })();
+</script>
+
 </body>
 </html>
