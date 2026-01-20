@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wokaly — Informações pessoais (UI Lab)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-slate-50 text-slate-900">
+    <main class="mx-auto max-w-5xl px-4 py-8">
+      <!-- Title -->
+      <div class="mb-6">
+        <h1 class="text-3xl font-semibold tracking-tight">Informações pessoais</h1>
+      </div>
+
+      <!-- Terms/Info alert -->
+      <div class="mb-6 rounded-xl border border-blue-200 bg-blue-50 px-4 py-3 text-sm text-slate-700">
+        <div class="flex gap-2">
+          <input type="checkbox" checked class="mt-1 h-4 w-4 rounded border-slate-300" />
+          <p>
+            O seu nome público e a imagem de perfil estarão disponíveis publicamente para outros usuários da plataforma.
+            Para mais informações sobre privacidade, consulte nossos
+            <a href="#" class="underline">Termos de Uso</a> e
+            <a href="#" class="underline">Política de Privacidade</a>.
+          </p>
+        </div>
+      </div>
+
+      <!-- Alerts -->
+      <div class="mb-4 hidden rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-900">
+        Salvo com sucesso.
+      </div>
+      <div class="mb-6 hidden rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-900">
+        Ocorreu um erro ao salvar.
+      </div>
+
+      <!-- Card: Perfil -->
+      <section class="rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <header class="border-b border-slate-100 px-6 py-5">
+          <h2 class="text-base font-semibold">Informações pessoais</h2>
+          <p class="mt-1 text-sm text-slate-600">Detalhes sobre seu perfil e informações da conta.</p>
+        </header>
+
+        <div class="px-6 py-6">
+          <!-- Avatar block -->
+          <div class="mb-6 rounded-xl border border-slate-200 bg-slate-50 p-4">
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+              <div class="flex items-center gap-4">
+                <div class="h-14 w-14 overflow-hidden rounded-full border border-slate-200 bg-white">
+                  <img
+                    src="https://placehold.co/112x112/png"
+                    alt="avatar"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+                <div>
+                  <p class="text-sm font-medium">Dicas para uma boa imagem de perfil:</p>
+                  <ul class="mt-1 space-y-1 text-xs text-slate-600">
+                    <li>• Imagem de alta qualidade</li>
+                    <li>• Foto de rosto</li>
+                    <li>• Até 5MB • .jpg .png .webp</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="flex gap-2">
+                <button class="rounded-lg bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-800">
+                  Inserir / Substituir
+                </button>
+                <button class="rounded-lg border border-slate-200 px-4 py-2 text-sm font-medium text-slate-900 hover:bg-slate-50">
+                  Remover
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 1 -->
+          <div class="grid gap-4 md:grid-cols-2">
+            <div>
+              <label class="text-sm font-medium">Nome social (público) <span class="text-rose-500">*</span></label>
+              <input class="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm outline-none focus:border-slate-400"
+                value="COCA-COLA" />
+              <p class="mt-1 text-xs text-slate-500">Nome com o qual você gostaria de ser chamado.</p>
+            </div>
+
+            <div>
+              <label class="text-sm font-medium">Nome completo <span class="text-rose-500">*</span></label>
+              <input class="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm outline-none focus:border-slate-400"
+                value="COCA-COLA Company Andina" />
+              <p class="mt-1 text-xs text-slate-500">Nome completo como descrito no seu documento oficial.</p>
+            </div>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="mt-6 grid gap-4 md:grid-cols-2">
+            <div>
+              <label class="text-sm font-medium">E-mail</label>
+              <input class="mt-1 w-full rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-sm text-slate-600"
+                value="rodrigosilva@oitogroup.com" disabled />
+              <p class="mt-1 text-xs text-slate-500">Esse é o seu e-mail de acesso. Para alterar, entre em contato com o suporte.</p>
+            </div>
+
+            <div>
+              <label class="text-sm font-medium">Usuário (handle público) <span class="text-rose-500">*</span></label>
+
+              <!-- Input group: prefix fixo -->
+              <div class="mt-1 flex overflow-hidden rounded-lg border border-slate-200 focus-within:border-slate-400">
+                <span class="flex items-center bg-slate-50 px-3 text-sm text-slate-600">@wokaly_</span>
+                <input class="w-full px-3 py-2 text-sm outline-none" value="coca_cola_company" />
+                <span class="flex items-center px-3 text-xs text-emerald-700">Disponível</span>
+              </div>
+
+              <p class="mt-1 text-xs text-slate-500">Ex.: maria_silva</p>
+
+              <div class="mt-2 flex flex-wrap items-center gap-3 text-xs text-slate-600">
+                <span>Seu link público: <code class="rounded bg-slate-100 px-1">https://wokaly.com/u/wokaly_coca_cola_company</code></span>
+                <button class="underline">Copiar link</button>
+                <a class="underline" href="#" target="_blank" rel="noopener noreferrer">Abrir perfil</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Card: Endereço -->
+      <section class="mt-6 rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <header class="border-b border-slate-100 px-6 py-5">
+          <h2 class="text-base font-semibold">Endereço</h2>
+        </header>
+
+        <div class="px-6 py-6">
+          <div class="grid gap-4 md:grid-cols-3">
+            <div>
+              <label class="text-sm font-medium">País de Residência <span class="text-rose-500">*</span></label>
+              <select class="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm">
+                <option>Brasil</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="text-sm font-medium">CEP <span class="text-rose-500">*</span></label>
+              <input class="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" value="24426-080" />
+            </div>
+
+            <div>
+              <label class="text-sm font-medium">Estado <span class="text-rose-500">*</span></label>
+              <select class="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm">
+                <option>RJ</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="mt-6 grid gap-4 md:grid-cols-2">
+            <div>
+              <label class="text-sm font-medium">Cidade / Município <span class="text-rose-500">*</span></label>
+              <input class="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" value="Niterói" />
+            </div>
+            <div>
+              <label class="text-sm font-medium">Bairro <span class="text-rose-500">*</span></label>
+              <input class="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" value="Icaraí" />
+            </div>
+          </div>
+
+          <div class="mt-6 grid gap-4 md:grid-cols-3">
+            <div class="md:col-span-2">
+              <label class="text-sm font-medium">Endereço <span class="text-rose-500">*</span></label>
+              <input class="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" value="Rua Salvatori" />
+            </div>
+            <div>
+              <label class="text-sm font-medium">Número</label>
+              <input class="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" value="99" />
+              <p class="mt-1 text-xs text-slate-500">Opcional</p>
+            </div>
+          </div>
+
+          <div class="mt-6">
+            <label class="text-sm font-medium">Complemento</label>
+            <input class="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" value="C2 Complemento" />
+            <p class="mt-1 text-xs text-slate-500">Opcional</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Card: Telefone + Save -->
+      <section class="mt-6 rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <header class="border-b border-slate-100 px-6 py-5">
+          <h2 class="text-base font-semibold">Telefone</h2>
+        </header>
+
+        <div class="px-6 py-6">
+          <div class="grid gap-4 md:grid-cols-2">
+            <div class="grid grid-cols-[90px_1fr] gap-3">
+              <div>
+                <label class="text-sm font-medium">Código</label>
+                <input class="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" value="+55" />
+              </div>
+              <div>
+                <label class="text-sm font-medium">Celular <span class="text-rose-500">*</span></label>
+                <input class="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" value="(11) 11111-1111" />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-[90px_1fr] gap-3">
+              <div>
+                <label class="text-sm font-medium">Código</label>
+                <input class="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" value="+55" />
+              </div>
+              <div>
+                <label class="text-sm font-medium">Telefone</label>
+                <input class="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2 text-sm" value="(11) 1234-5678" />
+                <p class="mt-1 text-xs text-slate-500">Opcional</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer actions -->
+        <footer class="flex flex-col gap-3 border-t border-slate-100 px-6 py-4 md:flex-row md:items-center md:justify-between">
+          <button class="rounded-lg bg-slate-900 px-5 py-2.5 text-sm font-medium text-white hover:bg-slate-800">
+            Salvar dados
+          </button>
+          <div class="text-right text-[11px] text-slate-500">
+            <span class="text-rose-500">*</span> Campos obrigatórios
+          </div>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
