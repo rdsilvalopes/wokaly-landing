@@ -3,77 +3,23 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Wokaly — Programa de Indicação (Referral)</title>
-  <meta name="description" content="Programa de Indicação Wokaly: assinante indica assinante. Ganhe créditos em participações e addons quando o indicado assinar e permanecer ativo." />
+  <title>Wokaly — Termos de Uso</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Favicons -->
+  <link rel="stylesheet" href="/styles.css">
+
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#0f1b2a">
-
-  <link rel="stylesheet" href="/styles.css">
-
-  <!-- (Opcional) micro-ajustes só para o bloco "copiar link" sem mexer no styles.css -->
-  <style>
-    .ref-box{
-      margin-top:18px;
-      background:#fff;
-      border-radius:16px;
-      border:1px solid #eef2ff;
-      box-shadow:var(--shadow);
-      padding:16px;
-    }
-    .ref-row{
-      display:flex;
-      gap:12px;
-      flex-wrap:wrap;
-      align-items:center;
-      margin-top:10px;
-    }
-    .ref-input{
-      flex:1 1 340px;
-      min-width:260px;
-      height:44px;
-      padding:0 14px;
-      border-radius:12px;
-      border:1px solid #e6ecff;
-      outline:none;
-      font-weight:700;
-      color:#0b1430;
-      background:#f7f9fe;
-    }
-    .ref-hint{
-      margin:10px 0 0;
-      color:#64748b;
-      font-size:12px;
-      line-height:1.5;
-    }
-    .toast{
-      display:none;
-      margin-top:10px;
-      background:#ecf2ff;
-      border:1px solid #dbeafe;
-      color:#1d4ed8;
-      border-radius:12px;
-      padding:10px 12px;
-      font-weight:800;
-      font-size:13px;
-    }
-    .toast.show{ display:inline-flex; }
-  </style>
 </head>
 
 <body>
-  <!-- =========================================================
-       HEADER / NAV
-  ========================================================== -->
   <header class="site-header">
     <div class="container navbar">
       <a class="brand brand-app" href="/" aria-label="Wokaly">
@@ -84,356 +30,58 @@
       </a>
 
       <nav class="nav-links">
-        <a href="#como-funciona">Como funciona</a>
-        <a href="#recompensas">Recompensas</a>
-        <a href="#regras">Regras</a>
-        <a href="#faq">FAQ</a>
-        <span class="chip">Referral</span>
+        <a href="/">Voltar ao site</a>
+        <span class="chip">Legal</span>
       </nav>
-
 
       <a class="btn btn-primary" href="https://app.wokaly.com/">Acessar plataforma</a>
     </div>
   </header>
 
-  <!-- =========================================================
-       HERO
-  ========================================================== -->
-  <section id="topo" class="hero">
+  <main class="section section-light" style="padding-top: 36px;">
     <div class="container">
-      <div class="hero-grid">
-        <!-- Lado esquerdo -->
-        <div class="hero-left">
-          <p class="kicker">Network effect com governança — Wokaly.</p>
+      <h1 class="section-title" style="margin-bottom: 6px;">Termos de Uso</h1>
+      <p class="section-sub" style="margin-top: 0;">
+        Este documento estabelece as regras de uso da plataforma Wokaly, responsabilidades, limites e condições aplicáveis a Empresas e Fornecedores.
+      </p>
 
-          <h1 class="hero-title">
-            Indique <span class="txt-gradient">assinantes</span> e ganhe participações
-          </h1>
-
-          <p class="hero-sub">
-            O Programa de Indicação da Wokaly é simples: <strong>assinante indica assinante</strong>.
-            Quando uma conta indicada assina um plano e permanece ativa, você ganha <strong>crédito em participações/addons</strong>.
-            Incentivo de baixo custo, alto impacto e foco em liquidez (demandas + propostas).
+      <div class="cta-empresa" style="margin-top: 18px;">
+        <div class="benefit-ico cta-empresa__ico">📄</div>
+        <div class="benefit-body cta-empresa__body">
+          <h3 class="cta-empresa__title">Documento oficial (PDF)</h3>
+          <p class="cta-empresa__desc">
+            Você pode visualizar o PDF diretamente no navegador ou fazer o download.
           </p>
 
-          <div class="pill-row">
-            <span class="pill">Pagante → Pagante</span>
-            <span class="pill">Gatilho auditável</span>
-            <span class="pill">Crédito em addons</span>
+          <div class="cta-empresa__ctas">
+            <a class="btn btn-primary btn-lg" href="./TERMOS%20DE%20USO%20WOKALY.pdf" target="_blank" rel="noopener noreferrer">
+              Abrir PDF
+            </a>
+            <a class="btn btn-ghost btn-lg btn-ghost--light" href="./TERMOS%20DE%20USO%20WOKALY.pdf" download>
+              Baixar PDF
+            </a>
           </div>
 
-          <div class="hero-ctas">
-            <a class="btn btn-primary btn-lg" href="#pegar-link">Pegar meu link</a>
-            <a class="btn btn-ghost btn-lg" href="#regras">Ver regras</a>
-          </div>
-
-          <p class="hero-note">
-            Recompensa liberada com <strong>assinatura ativa</strong> — para manter a qualidade e reduzir fraude.
+          <p class="cta-empresa__note">
+            Dica: se o PDF não carregar abaixo, use o botão “Abrir PDF”.
           </p>
         </div>
-
-        <!-- Lado direito (trilho com cards) -->
-        <aside class="hero-right">
-          <div class="hero-rail">
-            <article class="card">
-              <div class="card-ico">✅</div>
-              <div class="card-body">
-                <h4 class="card-title">Quem pode indicar</h4>
-                <p class="card-desc">Somente contas com plano ativo (assinantes).</p>
-              </div>
-            </article>
-
-            <article class="card">
-              <div class="card-ico">🆕</div>
-              <div class="card-body">
-                <h4 class="card-title">Conta indicada (nova)</h4>
-                <p class="card-desc">Cadastro via link + assinatura em até 30 dias.</p>
-              </div>
-            </article>
-
-            <article class="card">
-              <div class="card-ico">🎯</div>
-              <div class="card-body">
-                <h4 class="card-title">Meta de 3 assinantes</h4>
-                <p class="card-desc">Complete 3 assinantes válidos e desbloqueie bônus maior.</p>
-              </div>
-            </article>
-
-            <article class="card">
-              <div class="card-ico">⚡</div>
-              <div class="card-body">
-                <h4 class="card-title">Crédito em participações</h4>
-                <p class="card-desc">Impacto baixo no MRR e mais uso real da plataforma.</p>
-              </div>
-            </article>
-          </div>
-        </aside>
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================================================
-       COMO FUNCIONA
-  ========================================================== -->
-  <section id="como-funciona" class="section section-light">
-    <div class="container">
-      <h2 class="section-title">Como funciona</h2>
-      <p class="section-sub">
-        Um fluxo simples e rastreável para acelerar aquisição com governança.
-      </p>
-
-      <div class="cards-3">
-        <article class="step-card">
-          <span class="step-badge">Passo 1</span>
-          <h3>Você compartilha seu link</h3>
-          <ul>
-            <li>Link único por assinante</li>
-            <li>Você acompanha o status das indicações</li>
-            <li>Sem “achismo”: tudo fica registrado</li>
-          </ul>
-        </article>
-
-        <article class="step-card">
-          <span class="step-badge">Passo 2</span>
-          <h3>O indicado cria conta e assina</h3>
-          <ul>
-            <li>Conta precisa ser nova</li>
-            <li>Assina um plano elegível em até 30 dias</li>
-            <li>A assinatura precisa permanecer ativa</li>
-          </ul>
-        </article>
-
-        <article class="step-card">
-          <span class="step-badge">Passo 3</span>
-          <h3>Crédito liberado automaticamente</h3>
-          <ul>
-            <li>Crédito em participações/addons</li>
-            <li>Proteção contra cancelamento rápido</li>
-            <li>Mais liquidez: mais propostas e contratações</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================================================
-       RECOMPENSAS
-  ========================================================== -->
-  <section id="recompensas" class="section section-light">
-    <div class="container">
-      <h2 class="section-title">Recompensas</h2>
-      <p class="section-sub">
-        Você pode usar números “X/Y” agora e depois só ajustar no produto quando quiser.
-        O modelo abaixo é o mais saudável para marketplace: crédito em addon/participações.
-      </p>
-
-      <div class="pricing-grid">
-        <article class="pricing-card">
-          <div class="plan-top">
-            <div class="plan-name">1 assinante válido</div>
-            <div class="plan-desc">Recompensa por indicação confirmada.</div>
-          </div>
-
-          <div class="plan-price">
-            <span class="price">+X</span>
-            <span class="period">participações</span>
-          </div>
-
-          <div class="plan-note">Liberado após o indicado manter assinatura ativa (ex.: 30 dias).</div>
-
-          <a class="btn btn-primary btn-lg btn-block" href="#pegar-link">Indicar agora</a>
-
-          <ul class="plan-features">
-            <li><span class="check">✓</span> Incentivo de baixo custo</li>
-            <li><span class="check">✓</span> Aumenta uso real</li>
-            <li><span class="check">✓</span> Ajuda a criar liquidez</li>
-          </ul>
-        </article>
-
-        <article class="pricing-card">
-          <div class="plan-top">
-            <div class="plan-name">3 assinantes válidos</div>
-            <div class="plan-desc">Bônus por meta (acelera crescimento).</div>
-          </div>
-
-          <div class="plan-price">
-            <span class="price">+Y</span>
-            <span class="period">participações</span>
-          </div>
-
-          <div class="plan-note">Bônus adicional ao completar 3 assinantes válidos no período.</div>
-
-          <a class="btn btn-primary btn-lg btn-block" href="#regras">Ver condições</a>
-
-          <ul class="plan-features">
-            <li><span class="check">✓</span> Meta simples e clara</li>
-            <li><span class="check">✓</span> Recompensa maior</li>
-            <li><span class="check">✓</span> Controle e previsibilidade</li>
-          </ul>
-        </article>
-
-        <article class="pricing-card featured">
-          <div class="plan-top">
-            <div class="plan-name">Regras de elegibilidade</div>
-            <div class="plan-desc">Para manter qualidade e reduzir fraude.</div>
-          </div>
-
-          <div class="plan-price">
-            <span class="price">30</span>
-            <span class="period">dias</span>
-          </div>
-
-          <div class="plan-note">Assinatura do indicado deve ativar em até 30 dias do cadastro.</div>
-
-          <a class="btn btn-primary btn-lg btn-block" href="#faq">Tirar dúvidas</a>
-
-          <ul class="plan-features">
-            <li><span class="check">✓</span> Pagante indica pagante</li>
-            <li><span class="check">✓</span> Conta indicada precisa ser nova</li>
-            <li><span class="check">✓</span> Liberação com assinatura ativa</li>
-          </ul>
-        </article>
       </div>
 
-      <p class="small-muted">
-        Observação: “X” e “Y” são parâmetros do programa. Você pode iniciar simples (ex.: X=3 e Y=15) e ajustar pelo uso real.
+      <div class="compare-wrap" style="margin-top: 18px;">
+        <iframe
+          title="Termos de Uso — Wokaly"
+          src="./TERMOS%20DE%20USO%20WOKALY.pdf"
+          style="width: 100%; height: 78vh; border: 0; border-radius: 14px; background: #fff;"
+        ></iframe>
+      </div>
+
+      <p class="small-muted" style="margin-top: 10px;">
+        © 2026 Wokaly — Termos sujeitos a atualização. A versão válida é a publicada nesta página.
       </p>
     </div>
-  </section>
+  </main>
 
-  <!-- =========================================================
-       PEGAR LINK / CTA
-  ========================================================== -->
-  <section id="pegar-link" class="section section-light">
-    <div class="container">
-      <h2 class="section-title">Seu link de indicação</h2>
-      <p class="section-sub">
-        No MVP (landing), você pode mostrar um exemplo. No produto (app), esse link vira “real” após login,
-        com código único por assinante.
-      </p>
-
-      <div class="ref-box">
-        <strong style="color:#0b1430">Copie e compartilhe:</strong>
-
-        <div class="ref-row">
-          <input id="refLink" class="ref-input" type="text" value="https://app.wokaly.com/ref/SEU-CODIGO" readonly />
-          <button id="copyBtn" class="btn btn-primary btn-lg" type="button">Copiar link</button>
-          <a class="btn btn-ghost btn-lg btn-ghost--light" href="https://app.wokaly.com/">Abrir painel</a>
-        </div>
-
-        <div id="toast" class="toast" role="status" aria-live="polite">Link copiado ✅</div>
-
-        <p class="ref-hint">
-          Importante: para contabilizar, o indicado precisa cadastrar pelo link e assinar um plano elegível dentro do prazo.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================================================
-       REGRAS
-  ========================================================== -->
-  <section id="regras" class="section section-light">
-    <div class="container">
-      <h2 class="section-title">Regras do programa</h2>
-      <p class="section-sub">
-        Regras curtas, diretas e auditáveis — para evitar abuso e manter o incentivo saudável.
-      </p>
-
-      <div class="benefit-list">
-        <article class="benefit-item">
-          <div class="benefit-ico">👤</div>
-          <div class="benefit-body">
-            <h3>Pagante indica pagante</h3>
-            <p>Somente assinantes ativos podem indicar, e o indicado precisa se tornar assinante para validar.</p>
-          </div>
-        </article>
-
-        <article class="benefit-item">
-          <div class="benefit-ico">🆕</div>
-          <div class="benefit-body">
-            <h3>Conta indicada precisa ser nova</h3>
-            <p>Cadastro via link de indicação e sem histórico de assinatura anterior.</p>
-          </div>
-        </article>
-
-        <article class="benefit-item">
-          <div class="benefit-ico">⏱️</div>
-          <div class="benefit-body">
-            <h3>Prazo de conversão</h3>
-            <p>O indicado deve assinar um plano elegível em até <strong>30 dias</strong> após criar a conta.</p>
-          </div>
-        </article>
-
-        <article class="benefit-item">
-          <div class="benefit-ico">🔒</div>
-          <div class="benefit-body">
-            <h3>Liberação com assinatura ativa</h3>
-            <p>O crédito é liberado após a assinatura permanecer ativa por um período mínimo (ex.: 30 dias).</p>
-          </div>
-        </article>
-
-        <article class="benefit-item">
-          <div class="benefit-ico">📌</div>
-          <div class="benefit-body">
-            <h3>Limites e proteção</h3>
-            <p>A Wokaly pode aplicar limites mensais por conta e bloquear autoindicação (mesmo e-mail, dados repetidos, etc.).</p>
-          </div>
-        </article>
-      </div>
-
-      <div class="benefit-ctas">
-        <a class="btn btn-primary btn-lg" href="#pegar-link">Copiar meu link</a>
-        <a class="btn btn-primary btn-lg" href="https://app.wokaly.com/">Entrar na plataforma</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================================================
-       FAQ
-  ========================================================== -->
-  <section id="faq" class="section">
-    <div class="container">
-      <h2 class="section-title">Dúvidas frequentes</h2>
-      <p class="section-sub">Respostas objetivas para evitar ruído e alinhar expectativa.</p>
-
-      <div class="faq-list">
-        <details class="faq-item">
-          <summary>Quem pode participar do programa de indicação?</summary>
-          <p>Somente contas com plano ativo (assinantes) podem indicar, e a indicação só é validada quando o indicado também se torna assinante.</p>
-        </details>
-
-        <details class="faq-item">
-          <summary>O que é considerado “assinante válido”?</summary>
-          <p>Uma conta nova que entrou pelo seu link, assinou um plano elegível dentro do prazo e permaneceu com a assinatura ativa pelo período mínimo.</p>
-        </details>
-
-        <details class="faq-item">
-          <summary>Em quanto tempo o crédito cai?</summary>
-          <p>Após a assinatura do indicado permanecer ativa pelo período mínimo (ex.: 30 dias). Isso protege o programa contra cancelamentos rápidos.</p>
-        </details>
-
-        <details class="faq-item">
-          <summary>Posso indicar a mim mesmo?</summary>
-          <p>Não. Autoindicação não é permitida. A Wokaly pode bloquear por e-mail/dados repetidos e outras verificações.</p>
-        </details>
-
-        <details class="faq-item">
-          <summary>O crédito é desconto no plano?</summary>
-          <p>O padrão recomendado é crédito em participações/addons. Isso reduz impacto no MRR e aumenta uso real da plataforma.</p>
-        </details>
-
-        <details class="faq-item">
-          <summary>Qual a melhor forma de indicar?</summary>
-          <p>Indique para quem já tem intenção real de contratar/participar. No Brasil, LinkedIn e grupos profissionais tendem a converter bem quando existe confiança.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================================================
-       FOOTER
-  ========================================================== -->
   <footer class="site-footer">
     <div class="container footer-wrap">
       <div class="footer-brand">
@@ -443,31 +91,5 @@
       <p class="footnote">© 2026 Wokaly — Todos os direitos reservados.</p>
     </div>
   </footer>
-
-  <script>
-    (function(){
-      const input = document.getElementById('refLink');
-      const btn = document.getElementById('copyBtn');
-      const toast = document.getElementById('toast');
-
-      function showToast(){
-        toast.classList.add('show');
-        setTimeout(() => toast.classList.remove('show'), 1600);
-      }
-
-      btn?.addEventListener('click', async () => {
-        try{
-          await navigator.clipboard.writeText(input.value);
-          showToast();
-        }catch(e){
-          // fallback simples
-          input.select();
-          document.execCommand('copy');
-          input.blur();
-          showToast();
-        }
-      });
-    })();
-  </script>
 </body>
 </html>
