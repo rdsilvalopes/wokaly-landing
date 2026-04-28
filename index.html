@@ -1,15 +1,14 @@
-<!--Index.html-->
-
 <!doctype html>
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Wokaly — Encontre o fornecedor ideal para sua empresa</title>
+  <title>Wokaly - Organize a contratação de fornecedores de serviços</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="/styles.css">
 
@@ -19,15 +18,11 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#0f1b2a">
-
 </head>
 <body>
-  <!-- =========================================================
-       HEADER / NAV
-  ========================================================== -->
   <header class="site-header">
     <div class="container navbar">
-      <a class="brand brand-app" href="#topo" aria-label="Wokaly">
+      <a class="brand brand-app" href="/" aria-label="Wokaly">
         <span class="brand-mark" aria-hidden="true">
           <span class="brand-letter">W</span>
         </span>
@@ -35,162 +30,62 @@
       </a>
 
       <nav class="nav-links">
-        <a href="#o-que-e">O que é</a>
         <a href="#como-funciona">Como funciona</a>
         <a href="#beneficios">Benefícios</a>
-        <a href="#planos">Planos</a>
-        <a href="/categorias.html">Tipos de Serviços</a>
-        <a href="#faq">FAQ</a>
-        <span class="chip">B2B</span>
+        <a href="/categorias.html">Categorias</a>
+        <a href="/precos.html">Preços</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/fornecedor.html">Fornecedor</a>
       </nav>
 
-      <a class="btn btn-primary" href="https://app.wokaly.com/">Acessar plataforma</a>
+      <a class="btn btn-primary" href="https://app.wokaly.com/">Criar conta</a>
     </div>
   </header>
 
-  <!-- =========================================================
-     PRÉ-LANÇAMENTO — Banner (Lista + Evento + Convite)
-  ========================================================== 
-  <section class="section section-light" style="padding:18px 0;">
-    <div class="container">
-      <div style="
-        background: linear-gradient(180deg, rgba(59,130,246,.10) 0%, rgba(99,102,241,.06) 100%);
-        border:1px solid #dbeafe;
-        border-radius:16px;
-        padding:16px 16px;
-        display:flex;
-        align-items:center;
-        justify-content:space-between;
-        gap:14px;
-        flex-wrap:wrap;
-      ">
-        <div style="display:flex; gap:12px; align-items:flex-start; min-width:280px; flex:1;">
-          <div style="
-            width:42px; height:42px; border-radius:14px;
-            background: rgba(37,99,235,.12);
-            border:1px solid rgba(37,99,235,.18);
-            display:flex; align-items:center; justify-content:center;
-            color:#1d4ed8; font-weight:900;
-          ">🚀</div>
-
-          <div>
-            <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
-              <span style="
-                display:inline-flex; align-items:center; gap:8px;
-                padding:6px 10px; border-radius:999px;
-                background:#ecf2ff; border:1px solid #dbeafe;
-                color:#1d4ed8; font-weight:900; font-size:12px;
-              ">Pré-lançamento</span>
-
-              <span style="
-                display:inline-flex; align-items:center; gap:8px;
-                padding:6px 10px; border-radius:999px;
-                background:#ffffff; border:1px solid #eef2ff;
-                color:#0b1430; font-weight:900; font-size:12px;
-              ">📅 01/06/2026</span>
-
-              <span style="
-                display:inline-flex; align-items:center; gap:8px;
-                padding:6px 10px; border-radius:999px;
-                background:#ffffff; border:1px solid #eef2ff;
-                color:#0b1430; font-weight:900; font-size:12px;
-              ">🎟️ Acesso por convite</span>
-            </div>
-
-            <h3 style="margin:10px 0 6px; color:#0b1430; font-size:18px; font-weight:900; letter-spacing:-0.01em;">
-              Evento de Lançamento do Wokaly — Lista de Acesso Antecipado
-            </h3>
-
-            <p style="margin:0; color:#475569; line-height:1.6;">
-              Inscreva-se na lista, participe do evento ao vivo e receba o convite para acessar a plataforma após a apresentação.
-            </p>
-
-            <p style="margin:8px 0 0; color:#64748b; font-size:12px;">
-              Sem spam. Você recebe apenas confirmações, lembretes do evento e o convite de acesso.
-            </p>
-          </div>
-        </div>
-
-        <div style="display:flex; gap:12px; flex-wrap:wrap; align-items:center;">
-          <a class="btn btn-primary btn-lg" href="#FORM_LINK#">Entrar na lista</a>
-          <a class="btn btn-ghost btn-lg btn-ghost--light" href="#MEET_LINK#">Confirmar presença (Meet)</a>
-        </div>
-      </div>
-    </div>
-  </section>-->
-
-  <!-- =========================================================
-       HERO
-  ========================================================== -->
   <section id="topo" class="hero">
     <div class="container">
       <div class="hero-grid">
         <div class="hero-left">
-          <p class="kicker">Oportunidades. Critérios claros. Transparência - Wokaly.</p>
-
           <h1 class="hero-title">
-            Conecta <span class="txt-gradient">empresas e fornecedores</span> com critério e transparência
+            <span class="hero-title-lead">
+              Conecta <span class="txt-gradient">sua empresa</span> a fornecedores de serviços.
+            </span>
+            <span class="hero-support">Receba propostas e compare tudo em um só lugar.</span>
           </h1>
 
           <p class="hero-sub">
-            Empresas publicam uma demanda (<strong> Recrutamento &amp; Seleção, Treinamentos, Eventos &amp; Produção, Projetos, Jurídico &amp; Compliance</strong> e mais).
-            Fornecedores enviam propostas. A empresa compara, escolhe e acompanha tudo em um único lugar.
+            A Wokaly conecta sua empresa ao fornecedor de serviços ideal.
           </p>
-
-          <div class="pill-row">
-            <span class="pill">Propostas por demanda</span>
-            <span class="pill">Curadoria & compliance</span>
-            <span class="pill">Dashboard e histórico</span>
-          </div>
 
           <div class="hero-ctas">
-            <a class="btn btn-primary btn-lg" href="https://wokaly.com/categorias.html">Tipos de Serviços</a>
-            <a class="btn btn-ghost btn-lg" href="#como-funciona">Ver como funciona</a>
+            <a class="btn btn-primary btn-lg" href="https://app.wokaly.com/">Criar conta</a>
+            <a class="btn btn-ghost btn-lg" href="/categorias.html">Ver categorias</a>
           </div>
-
-          <p class="hero-note">
-            <strong>Marketplace B2B</strong> onde empresas publicam demandas, comparam
-            propostas e escolhem fornecedores com critérios claros.
-          </p>
         </div>
 
         <aside class="hero-right">
           <div class="hero-rail">
             <article class="card">
-              <div class="card-ico">📝</div>
+              <div class="card-ico">01</div>
               <div class="card-body">
-                <h4 class="card-title">Empresa publica a demanda</h4>
-                <p class="card-desc">
-                  Categoria, escopo, orçamento, prazo e UF.<br>
-                  Sem burocracia.
-                </p>
+                <h4 class="card-title">Publique a sua demanda</h4>
+                <p class="card-desc">Descreva o que você precisa contratar, o prazo e os critérios.</p>
               </div>
             </article>
 
             <article class="card">
-              <div class="card-ico">⚖️</div>
+              <div class="card-ico">02</div>
               <div class="card-body">
-                <h4 class="card-title">Fornecedores enviam propostas</h4>
-                <p class="card-desc">
-                  Preços comparáveis.<br>
-                  Transparência na decisão.
-                </p>
+                <h4 class="card-title">Receba propostas</h4>
+                <p class="card-desc">Fornecedores de serviços respondem a partir de uma demanda real.</p>
               </div>
             </article>
 
             <article class="card">
-              <div class="card-ico">🤝</div>
+              <div class="card-ico">03</div>
               <div class="card-body">
-                <h4 class="card-title">Empresa escolhe e contrata</h4>
-                <p class="card-desc">Aprovação, evidências e histórico centralizados.</p>
-              </div>
-            </article>
-
-            <article class="card">
-              <div class="card-ico">📊</div>
-              <div class="card-body">
-                <h4 class="card-title">Execução acompanhada no dashboard</h4>
-                <p class="card-desc">Mensagens, entregas e status em tempo real.</p>
+                <h4 class="card-title">Compare com mais clareza</h4>
+                <p class="card-desc">Escopo, prazo e custo ficam organizados no mesmo fluxo.</p>
               </div>
             </article>
           </div>
@@ -199,678 +94,195 @@
     </div>
   </section>
 
-  <!-- =========================================================
-       O QUE É / PARA QUEM É
-  ========================================================== -->
-  <section id="o-que-e" class="section section-light">
+  <section class="section section-light">
     <div class="container">
-      <h2 class="section-title">O que é a Wokaly</h2>
-      <p class="section-sub">
-        Um <strong>marketplace B2B</strong> para contratar serviços com transparência, agilidade e governança — com propostas comparáveis e decisão por critérios.
-      </p>
+      <div class="problem-strip">
+        <div>
+          <p class="problem-strip__eyebrow"></p>
+          <h2 class="section-title">O fornecedor certo, simples assim.</h2>
+        </div>
 
-      <div class="grid-2">
-        <article class="info-card">
-          <h3>Para Empresas</h3>
-          <ul>
-            <li>Publicar demandas por categoria (R&amp;S, consultoria, treinamento, projetos…)</li>
-            <li>Receber e comparar propostas com preço, SLA e escopo</li>
-            <li>Decidir com evidências e histórico centralizados</li>
-            <li>Acompanhar execução, mensagens e entregas</li>
-          </ul>
-        </article>
+        <div class="mini-benefit-grid">
+          <article class="mini-benefit-card">
+            <h3>Você escolhe</h3>
+            <p>Você escolhe o fornecedor ideal.</p>
+          </article>
 
-        <article class="info-card">
-          <h3>Para Fornecedores</h3>
-          <ul>
-            <li>Descobrir oportunidades no <strong>Mundo Wokaly</strong> (vitrine)</li>
-            <li>Participar conforme o plano (Basic/Pro/Premium)</li>
-            <li>Enviar propostas e negociar com rastreabilidade</li>
-            <li>Construir reputação e portfólio dentro da plataforma</li>
-          </ul>
-        </article>
-      </div>
+          <article class="mini-benefit-card">
+            <h3>Propostas lado a lado</h3>
+            <p>Você recebe preços para comparar no mesmo lugar.</p>
+          </article>
 
-      <div class="tag-grid" aria-label="Categorias">
-        <span class="tag">Recrutamento &amp; Seleção</span>
-        <span class="tag">Headhunter</span>
-        <span class="tag">Consultoria</span>
-        <span class="tag">Qualidade</span>
-        <span class="tag">Financeiro</span>
-        <span class="tag">Treinamentos</span>
-        <span class="tag">Projetos</span>
-        <span class="tag">Auditoria</span>
-        <span class="tag">BPO / Operação</span>
-        <span class="tag">Eventos e Produção</span>
-        <span class="tag">Jurídico e Compliance</span>
-        <span class="tag">Tecnologia &amp; Dados</span>
+          <article class="mini-benefit-card">
+            <h3>Comparar é fácil em 1 minuto</h3>
+            <p>Comparar sem esforço.</p>
+          </article>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- =========================================================
-       COMO FUNCIONA (3 passos)
-  ========================================================== -->
   <section id="como-funciona" class="section">
     <div class="container">
-      <h2 class="section-title">Como funciona em 3 passos</h2>
+      <h2 class="section-title">Como funciona</h2>
       <p class="section-sub">
-        Um processo simples para contratar serviços com clareza de escopo, preço e SLA.
+        A Wokaly organiza uma etapa que hoje costuma ficar difusa: publicar a necessidade, receber propostas e comparar com mais clareza.
       </p>
 
       <div class="cards-3">
         <article class="step-card">
           <span class="step-badge">Passo 1</span>
-          <h3>Empresa descreve a demanda</h3>
+          <h3>Publique sua demanda</h3>
           <ul>
-            <li>Categoria do serviço e escopo objetivo</li>
-            <li>Orçamento, prazo, UF/abrangência</li>
-            <li>Critérios de seleção e SLA</li>
+            <li>Descreva o serviço, o escopo e o prazo</li>
+            <li>Defina critérios para comparar melhor</li>
+            <li>Use categorias e exemplos para escrever com mais clareza</li>
           </ul>
         </article>
 
         <article class="step-card">
           <span class="step-badge">Passo 2</span>
-          <h3>Fornecedores enviam propostas</h3>
+          <h3>Receba propostas</h3>
           <ul>
-            <li>Preço, escopo, SLA e condições</li>
-            <li>Mensagens e Q&amp;A para alinhar detalhes</li>
-            <li>Transparência na comparação</li>
+            <li>Os fornecedores entram a partir de demandas reais</li>
+            <li>As respostas ficam no mesmo fluxo</li>
+            <li>Você reduz ruído e desencontro logo no início</li>
           </ul>
         </article>
 
         <article class="step-card">
           <span class="step-badge">Passo 3</span>
-          <h3>Escolha, contratação e acompanhamento</h3>
+          <h3>Compare em um só lugar</h3>
           <ul>
-            <li>Seleção do vencedor e formalização</li>
-            <li>Execução monitorada no dashboard</li>
-            <li>Histórico e evidências centralizados</li>
+            <li>Veja escopo, prazo e custo com mais critério</li>
+            <li>Organize a decisão antes do fechamento</li>
+            <li>Siga a negociação com mais clareza</li>
           </ul>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- =========================================================
-       BENEFÍCIOS
-  ========================================================== -->
   <section id="beneficios" class="section section-light">
     <div class="container">
-      <h2 class="section-title">Por que contratar serviços pela Wokaly?</h2>
+      <h2 class="section-title">O que muda para a sua empresa</h2>
       <p class="section-sub">
-        Menos retrabalho na contratação. Mais previsibilidade para empresa e fornecedor.
+        Menos conversa espalhada. Mais clareza para publicar, receber e comparar propostas de serviços.
       </p>
 
       <div class="benefit-list">
         <article class="benefit-item">
-          <div class="benefit-ico">🔍</div>
+          <div class="benefit-ico">01</div>
           <div class="benefit-body">
-            <h3>Transparência por padrão</h3>
-            <p>Propostas comparáveis e histórico centralizado.</p>
+            <h3>Mais clareza no início</h3>
+            <p>Você estrutura melhor a demanda antes de sair falando com fornecedores sem contexto comum.</p>
           </div>
         </article>
 
         <article class="benefit-item">
-          <div class="benefit-ico">🧩</div>
+          <div class="benefit-ico">02</div>
           <div class="benefit-body">
-            <h3>Curadoria e governança</h3>
-            <p>Critérios mínimos e governança para participar das demandas.</p>
+            <h3>Mais critério para comparar</h3>
+            <p>As propostas deixam de ficar espalhadas entre canais diferentes e passam a fazer mais sentido lado a lado.</p>
           </div>
         </article>
 
         <article class="benefit-item">
-          <div class="benefit-ico">⚡</div>
+          <div class="benefit-ico">03</div>
           <div class="benefit-body">
-            <h3>Velocidade com controle</h3>
-            <p>Receba propostas rapidamente sem perder rastreabilidade do processo.</p>
-          </div>
-        </article>
-
-        <article class="benefit-item">
-          <div class="benefit-ico">📈</div>
-          <div class="benefit-body">
-            <h3>Escala por categorias</h3>
-            <p>Um único lugar para diferentes tipos de serviços, sem múltiplos fornecedores “soltos”.</p>
+            <h3>Menos ruído na contratação</h3>
+            <p>O processo ganha mais organização antes do fechamento, sem virar uma comunicação pesada ou burocrática.</p>
           </div>
         </article>
       </div>
 
       <div class="benefit-ctas">
-        <a class="btn btn-primary btn-lg" href="https://app.wokaly.com/">Quero publicar uma demanda</a>
-        <a class="btn btn-primary btn-lg" href="#faq">Ver perguntas frequentes</a>
+        <a class="btn btn-primary btn-lg" href="https://app.wokaly.com/">Criar conta</a>
+        <a class="btn btn-ghost btn-lg btn-ghost--light" href="/precos.html">Ver preços</a>
       </div>
     </div>
   </section>
 
-  <!-- =========================================================
-     PLANOS (Empresa x Fornecedor) — com abas + comparação
-  ========================================================== -->
-  <section id="planos" class="section section-light">
+  <section class="section">
     <div class="container">
-      <h2 class="section-title">Planos</h2>
+      <h2 class="section-title">O que sua empresa pode publicar</h2>
       <p class="section-sub">
-        A Wokaly tem visão de negócio para os dois lados: <strong>Empresa</strong> (contrata por demanda com governança)
-        e <strong>Fornecedor</strong> (acesso, limites e visibilidade no Mundo Wokaly).
+        A página de categorias ajuda a transformar uma necessidade difusa em uma demanda mais clara, com exemplos reais de contratação.
       </p>
 
-      <div class="tabs" role="tablist" aria-label="Planos Wokaly">
-        <button class="tab-btn active" type="button" role="tab" aria-selected="true" data-tab="empresa">
-          Para Empresas
-        </button>
-        <button class="tab-btn" type="button" role="tab" aria-selected="false" data-tab="fornecedor">
-          Para Fornecedores
-        </button>
+      <div class="proof-grid">
+        <article class="proof-card">
+          <h3>Recrutamento &amp; Seleção</h3>
+          <p>Contrate com escopo, SLA e critérios mais objetivos.</p>
+        </article>
+
+        <article class="proof-card">
+          <h3>Consultoria</h3>
+          <p>Organize diagnóstico, entregáveis, prazo e metodologia.</p>
+        </article>
+
+        <article class="proof-card">
+          <h3>Marketing Digital</h3>
+          <p>Peça propostas com metas, rotina de relatório e escopo mais claro.</p>
+        </article>
+
+        <article class="proof-card">
+          <h3>BPO / Operação</h3>
+          <p>Compare propostas com SLA, volume e forma de reporte definidos.</p>
+        </article>
       </div>
 
-      <!-- Painel Empresa -->
-      <div class="tab-panel active" data-panel="empresa" role="tabpanel">
-        <p class="small-muted" style="margin-top:10px">
-          Planos para empresas que querem contratar serviços com governança, transparência e controle.
-        </p>
-
-        <div class="cta-empresa">
-          <div class="benefit-ico cta-empresa__ico">🚀</div>
-
-          <div class="benefit-body cta-empresa__body">
-            <h3 class="cta-empresa__title">
-              Publique sua demanda e receba propostas comparáveis
-            </h3>
-
-            <p class="cta-empresa__desc">
-              Defina escopo, critérios e prazo. A Wokaly organiza as propostas por <strong>preço</strong>, <strong>SLA</strong> e <strong>escopo</strong>,
-              para você decidir com transparência e histórico centralizado.
-            </p>
-
-            <div class="cta-empresa__pills">
-              <span class="pill pill--light">Propostas lado a lado</span>
-              <span class="pill pill--light">Critérios e governança</span>
-              <span class="pill pill--light">Dashboard e evidências</span>
-            </div>
-
-            <div class="cta-empresa__ctas">
-              <a class="btn btn-primary btn-lg" href="https://app.wokaly.com/">Publicar demanda agora</a>
-              <a class="btn btn-ghost btn-lg btn-ghost--light" href="#como-funciona">
-                Ver como funciona
-              </a>
-            </div>
-
-            <p class="cta-empresa__note">
-              Dica: comece com 1 demanda bem específica (escopo + critérios + SLA). Isso acelera propostas melhores.
-            </p>
-          </div>
-        </div>
-
-        <div class="pricing-grid pricing-grid-empresa">
-          <article class="pricing-card">
-            <div class="plan-top">
-              <div class="plan-name">Empresa Basic</div>
-              <div class="plan-desc">Comece aqui e colha os benefícios.</div>
-            </div>
-
-            <div class="plan-price">
-              <span class="price">R$ 128</span>
-              <span class="period">/ mês</span>
-            </div>
-            <div class="plan-note">Plano para pequenas empresas terem acesso.</div>
-
-            <a class="btn btn-primary btn-lg btn-block" href="https://app.wokaly.com/">Assinar Basic</a>
-
-            <ul class="plan-features">
-              <li><span class="check">✓</span> Publicar demandas (categorias)</li>
-              <li><span class="check">✓</span> Receber e comparar propostas</li>
-              <li><span class="check">✓</span> Dashboard de andamento</li>
-            </ul>
-          </article>
-
-          <article class="pricing-card">
-            <div class="plan-top">
-              <div class="plan-name">Empresa Pro</div>
-              <div class="plan-desc">Para times ou filiais e controle.</div>
-            </div>
-
-            <div class="plan-price">
-              <span class="price">R$ 189</span>
-              <span class="period">/ mês</span>
-            </div>
-            <div class="plan-note">Plano para médias empresas terem acesso.</div>
-
-            <a class="btn btn-primary btn-lg btn-block" href="https://app.wokaly.com/">Assinar Pro</a>
-
-            <ul class="plan-features">
-              <li><span class="check">✓</span> Mais demandas ativas simultâneas</li>
-              <li><span class="check">✓</span> Equipe e permissões completas</li>
-              <li><span class="check">✓</span> Templates e critérios de seleção</li>
-            </ul>
-          </article>
-
-          <article class="pricing-card featured">
-            <div class="plan-top">
-              <div class="plan-name">Empresa Premium</div>
-              <div class="plan-desc">Governança máxima e operação em escala.</div>
-            </div>
-
-            <div class="plan-price">
-              <span class="price">R$ 349</span>
-              <span class="period">/ mês</span>
-            </div>
-            <div class="plan-note">Plano para grandes empresas terem acesso.</div>
-
-            <a class="btn btn-primary btn-lg btn-block" href="https://app.wokaly.com/">Assinar Premium</a>
-
-            <ul class="plan-features">
-              <li><span class="check">✓</span> Limites ampliados (volume)</li>
-              <li><span class="check">✓</span> Trilhas, evidências e histórico</li>
-              <li><span class="check">✓</span> Suporte premium e priorização</li>
-            </ul>
-          </article>
-        </div>
-
-        <div class="compare-wrap" role="region" aria-label="Comparação de planos para Empresas" tabindex="0">
-          <table class="compare-table">
-            <thead>
-              <tr>
-                <th class="col-feature">Recursos</th>
-                <th>Empresa Basic</th>
-                <th>Empresa Pro</th>
-                <th class="col-featured">Empresa Premium</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Criar demandas ilimitadas</td>
-                <td>✓</td>
-                <td>✓</td>
-                <td class="yes col-featured">✓</td>
-              </tr>
-              <tr>
-                <td>Publicar Participações ativas simultâneas</td>
-                <td>4</td>
-                <td>6</td>
-                <td class="col-featured">10</td>
-              </tr>
-              <tr>
-                <td>Formatos na vitrine (Mundo Wokaly)</td>
-                <td>Mini</td>
-                <td>Mini, Simple e Rich</td>
-                <td class="col-featured">Mini, Simple, Rich, Compact e Hero</td>
-              </tr>
-              <tr>
-                <td>Publicar demandas em detaque / premium</td>
-                <td>—</td>
-                <td>—</td>
-                <td class="yes col-featured">✓</td>
-              </tr>
-              <tr>
-                <td>Equipe e permissões</td>
-                <td>✓</td>
-                <td>✓</td>
-                <td class="yes col-featured">✓</td>
-              </tr>
-              <tr>
-                <td>Usuários</td>
-                <td class="yes">1</td>
-                <td class="yes">1</td>
-                <td class="yes col-featured">1</td>
-              </tr>
-              <tr>
-                <td>Gestão de Participações</td>
-                <td class="no">✓</td>
-                <td>✓</td>
-                <td class="yes col-featured">✓</td>
-              </tr>
-              <tr>
-                <td>Suporte</td>
-                <td>Padrão</td>
-                <td>Prioritário</td>
-                <td class="col-featured">Premium</td>
-              </tr>
-              <tr>
-                <td>Publicar Participações Premium - hero</td>
-                <td>—</td>
-                <td>—</td>
-                <td class="yes col-featured">2</td>
-              </tr>
-              <tr>
-                <td>Publicar Participações Premium - Compact</td>
-                <td>—</td>
-                <td>—</td>
-                <td class="yes col-featured">2</td>
-              </tr>
-              <tr>
-                <td>Publicar Participações - Rich</td>
-                <td>—</td>
-                <td class="yes">2</td>
-                <td class="yes col-featured">3</td>
-              </tr>
-              <tr>
-                <td>Publicar Participações - Simple</td>
-                <td>—</td>
-                <td class="yes">2</td>
-                <td class="yes col-featured">3</td>
-              </tr>
-              <tr>
-                <td>Publicar Participações - Mini</td>
-                <td class="yes">4</td>
-                <td class="yes">4</td>
-                <td class="yes col-featured">4</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <!-- Painel Fornecedor -->
-      <div class="tab-panel" data-panel="fornecedor" role="tabpanel" hidden>
-        <p class="small-muted" style="margin-top:10px">
-          Planos para fornecedores que querem participar de demandas, ganhar visibilidade e crescer dentro da plataforma.
-        </p>
-
-        <div class="pricing-grid">
-          <article class="pricing-card">
-            <div class="plan-top">
-              <div class="plan-name">Basic</div>
-              <div class="plan-desc">Entrada para começar a participar.</div>
-            </div>
-
-            <div class="plan-price">
-              <span class="price">R$ 49,90</span>
-              <span class="period">/ mês</span>
-            </div>
-            <div class="plan-note">Plano para começar a participar na plataforma.</div>
-
-            <a class="btn btn-primary btn-lg btn-block" href="https://app.wokaly.com/">Assinar Basic</a>
-
-            <ul class="plan-features">
-              <li><span class="check">✓</span> Ver oportunidades no Mundo Wokaly</li>
-              <li><span class="check">✓</span> Participações ativas (limite básico)</li>
-              <li><span class="check">✓</span> Acesso às demandas abertas</li>
-              <li><span class="check">✓</span> Perfil e ativação na plataforma</li>
-            </ul>
-          </article>
-
-          <article class="pricing-card">
-            <div class="plan-top">
-              <div class="plan-name">Pro</div>
-              <div class="plan-desc">Para fornecedores que querem crescer.</div>
-            </div>
-
-            <div class="plan-price">
-              <span class="price">R$ 89,90</span>
-              <span class="period">/ mês</span>
-            </div>
-            <div class="plan-note">Plano para mais participação, visibilidade e crescimento.</div>
-
-            <a class="btn btn-primary btn-lg btn-block" href="https://app.wokaly.com/">Assinar Pro</a>
-
-            <ul class="plan-features">
-              <li><span class="check">✓</span> Mais participações ativas e propostas</li>
-              <li><span class="check">✓</span> Formatos de vitrine (Simple / Rich)</li>
-              <li><span class="check">✓</span> Acesso a demandas mais qualificadas</li>
-              <li><span class="check">✓</span> Suporte priorizado</li>
-            </ul>
-          </article>
-
-          <article class="pricing-card featured">
-            <div class="plan-top">
-              <div class="plan-name">Premium</div>
-              <div class="plan-desc">Máximo acesso e visibilidade.</div>
-            </div>
-
-            <div class="plan-price">
-              <span class="price">R$ 129,90</span>
-              <span class="period">/ mês</span>
-            </div>
-            <div class="plan-note">Plano para fornecedores com maior acesso e destaque.</div>
-
-            <a class="btn btn-primary btn-lg btn-block" href="https://app.wokaly.com/">Assinar Premium</a>
-
-            <ul class="plan-features">
-              <li><span class="check">✓</span> Central de Participações (filtros, pesquisas)</li>
-              <li><span class="check">✓</span> Maior destaque no Mundo Wokaly (Compact / Hero)</li>
-              <li><span class="check">✓</span> Acesso a demandas premium com destaque</li>
-              <li><span class="check">✓</span> Limites ampliados + suporte premium</li>
-            </ul>
-          </article>
-        </div>
-
-        <div class="compare-wrap" role="region" aria-label="Comparação de planos para Fornecedores" tabindex="0">
-          <table class="compare-table">
-            <thead>
-              <tr>
-                <th class="col-feature">Recursos</th>
-                <th>Basic</th>
-                <th>Pro</th>
-                <th class="col-featured">Premium</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Ver oportunidades no Mundo Wokaly</td>
-                <td class="yes">✓</td>
-                <td class="yes">✓</td>
-                <td class="yes col-featured">✓</td>
-              </tr>
-              <tr>
-                <td>Enviar propostas por demanda</td>
-                <td>6</td>
-                <td class="yes">12</td>
-                <td class="yes col-featured">20</td>
-              </tr>
-              <tr>
-                <td>Participações ativas simultâneas</td>
-                <td>4</td>
-                <td>10</td>
-                <td class="col-featured">18</td>
-              </tr>
-              <tr>
-                <td>Formatos na vitrine (Mundo Wokaly)</td>
-                <td>Mini e Simple</td>
-                <td>Mini, Simple e Rich</td>
-                <td class="col-featured">Mini, Simple, Rich, Compact e Hero</td>
-              </tr>
-              <tr>
-                <td>Acesso a demandas premium</td>
-                <td>—</td>
-                <td>—</td>
-                <td class="yes col-featured">✓</td>
-              </tr>
-              <tr>
-                <td>Central de Participações (pesquisa e filtros)</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="yes col-featured">✓</td>
-              </tr>
-              <tr>
-                <td>Equipe e permissões</td>
-                <td>Completo</td>
-                <td>Completo</td>
-                <td class="col-featured">Completo</td>
-              </tr>
-              <tr>
-                <td>Usuários</td>
-                <td class="yes">1</td>
-                <td class="yes">1</td>
-                <td class="yes col-featured">1</td>
-              </tr>
-              <tr>
-                <td>Suporte</td>
-                <td>Padrão</td>
-                <td>Prioritário</td>
-                <td class="col-featured">Premium</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <div class="section-actions">
+        <a class="btn btn-primary btn-lg" href="/categorias.html">Explorar categorias</a>
       </div>
     </div>
   </section>
 
-  <!-- =========================================================
-     FAQ
-  ========================================================== -->
-  <section id="faq" class="section">
+  <section class="section section-light">
     <div class="container">
-      <h2 class="section-title">Dúvidas frequentes</h2>
-      <p class="section-sub">Respostas objetivas sobre como a Wokaly funciona para Empresas e Fornecedores.</p>
+      <h2 class="section-title">FAQ rápido</h2>
+      <p class="section-sub">
+        O FAQ completo fica em uma página separada. Aqui entram apenas as dúvidas que ajudam a home a não travar.
+      </p>
 
-      <div class="faq-list">
+      <div class="faq-list faq-list--light">
         <details class="faq-item">
-          <summary>O que exatamente é a Wokaly?</summary>
-          <p>
-            A Wokaly é um marketplace B2B que organiza a contratação de serviços entre empresas e fornecedores.
-            A empresa publica uma demanda com escopo e critérios; fornecedores enviam propostas; a empresa compara, decide e escolhe
-            o fornecedor em um único lugar, com histórico e transparência.
-          </p>
+          <summary>Preciso criar conta para publicar uma demanda?</summary>
+          <p>Sim. A conta é a porta de entrada para publicar a demanda e organizar o processo dentro da plataforma.</p>
         </details>
 
         <details class="faq-item">
-          <summary>Quais profissionais ou empresas podem ser fornecedores?</summary>
-          <p>
-            Profissionais independentes e empresas que prestam serviços para organizações, como recrutadores/headhunters, consultores de TI, qualidade, segurança, finanças, treinamentos
-            corporativos, auditoria, projetos e serviços especializados por categoria.
-          </p>
+          <summary>Sou obrigado a fechar com um fornecedor?</summary>
+          <p>Não. A empresa pode publicar, receber propostas, comparar e seguir apenas se fizer sentido.</p>
         </details>
 
         <details class="faq-item">
-          <summary>Sou empresa: quais tipos de serviços posso contratar?</summary>
-          <p>
-            Qualquer serviço que possa ser descrito com escopo, critérios e SLA.
-            Exemplos: Hunter/Recrutamento &amp; Seleção, Consultoria, Treinamentos, Projetos, BPO/Operação, Auditoria e outros serviços profissionais.
-          </p>
+          <summary>Que tipos de serviço entram na Wokaly?</summary>
+          <p>Serviços que possam ser descritos com escopo, prazo, critérios e entregáveis claros.</p>
         </details>
 
         <details class="faq-item">
-          <summary>Sou empresa: preciso criar conta para publicar uma demanda?</summary>
-          <p>
-            Sim. Para publicar demandas, receber propostas, comparar com critérios e manter histórico e evidências, é necessário
-            criar uma conta e concluir a trilha de ativação da organização (dados e documentos, quando aplicável).
-          </p>
+          <summary>Como o fornecedor entra no processo?</summary>
+          <p>O fornecedor entra a partir de demandas reais. A página de fornecedor explica esse fluxo com mais detalhe.</p>
         </details>
+      </div>
 
-        <details class="faq-item">
-          <summary>Sou fornecedor: como eu vejo as oportunidades e faço ofertas?</summary>
-          <p>
-            As oportunidades ficam disponíveis no Mundo Wokaly (vitrine).
-            Para participar, o fornecedor precisa ter o perfil completo e a organização ativa na plataforma.
-            O plano contratado (Basic/Pro/Premium) define limites, acesso e visibilidade.
-          </p>
-        </details>
-
-        <details class="faq-item">
-          <summary>Como a Wokaly controla qualidade e segurança?</summary>
-          <p>
-            Por meio de critérios mínimos de participação, trilhas de ativação para empresas e fornecedores, histórico centralizado e rastreabilidade do processo (propostas, mensagens, decisões e acompanhamento).
-            A curadoria evolui com reputação, evidências e histórico dentro da plataforma.
-          </p>
-        </details>
-
-        <details class="faq-item">
-          <summary>Como funciona a escolha do fornecedor e a contratação?</summary>
-          <p>
-            A empresa define previamente o escopo, critérios, preço e SLA da demanda.
-            Após o período de recebimento de propostas, a empresa analisa, compara e escolhe a proposta que melhor atende aos critérios definidos.
-            O contato e a formalização acontecem entre as partes, com o processo registrado e acompanhado pela plataforma para manter histórico e transparência.
-          </p>
-        </details>
-
-        <details class="faq-item">
-          <summary>Sou empresa: sou obrigado a escolher um fornecedor ao final do processo?</summary>
-          <p>
-            Não. A empresa pode usar a Wokaly para avaliar propostas, comparar preços e condições, e encerrar a demanda sem escolher um fornecedor.
-          </p>
-        </details>
-
-        <details class="faq-item">
-          <summary>Como funcionam os planos e preços?</summary>
-          <p>
-            Existem planos para <strong>Empresas</strong> e para <strong>Fornecedores</strong>. Para empresas, os planos evoluem
-            em limites, governança e recursos de gestão. Para fornecedores, os planos determinam acesso, visibilidade e limites de participação.
-            Consulte a seção <strong>Planos</strong> para a visão completa.
-          </p>
-        </details>
-
-        <details class="faq-item">
-          <summary>Qual a diferença do plano Premium?</summary>
-          <p>
-            Empresa tem acesso ao destaque ao publicar suas demandas em todos os formatos, pode abrir mais demandas e participações simultâneas.
-            Fornecedor tem acesso a todas os tipos de publicações, à Central de Participações com filtros e pesquisas e pode enviar lances para mais demandas simultaneamente.
-          </p>
-        </details>
-
-        <details class="faq-item">
-          <summary>Consigo usar a Wokaly com meu time?</summary>
-          <p>
-            Sim. A plataforma suporta operação <strong>multiusuário por organização</strong> (owner, admin e membros) e, quando aplicável, por unidades ou filiais, com regras claras de acesso e permissão.
-          </p>
-        </details>
-
-        <details class="faq-item">
-          <summary>O que é a Central de Participações?</summary>
-          <p>
-            É a área onde fornecedores podem pesquisar e filtrar demandas por categoria, escopo, região e outros critérios.
-            Está disponível conforme o plano contratado, com recursos avançados para fornecedores Premium.
-          </p>
-        </details>
-
-        <details class="faq-item">
-          <summary>Existe período grátis para fornecedores?</summary>
-          <p>
-            Não. Atualmente, os planos de fornecedores são pagos e definem o nível de acesso, participação, visibilidade e recursos disponíveis dentro da plataforma.
-          </p>
-        </details>
-
-        <details class="faq-item">
-          <summary>Qual é o próximo passo para começar?</summary>
-          <p>
-            Se você é <strong>Empresa</strong>, publique sua primeira demanda. Se você é <strong>Fornecedor</strong>, complete seu perfil,
-            finalize o licenciamento e escolha o plano adequado para participar e ganhar visibilidade.
-          </p>
-        </details>
+      <div class="section-actions">
+        <a class="btn btn-primary btn-lg" href="/faq.html">Ver FAQ completo</a>
       </div>
     </div>
   </section>
 
-  <!-- =========================================================
-       FOOTER
-  ========================================================== -->
   <footer class="site-footer">
     <div class="container footer-wrap">
-      <div class="footer-brand">
-        <span class="brand-emoji">🔒</span>
-        <span class="brand-text">Wokaly</span>
+      <div class="footer-brand footer-brand-app">
+        <span class="footer-brand-mark" aria-hidden="true">W</span>
+        <span class="footer-brand-name">Wokaly</span>
       </div>
       <p class="footnote">
-        © 2026 Wokaly — Todos os direitos reservados.
+        &copy; 2026 Wokaly - Todos os direitos reservados.
       </p>
     </div>
   </footer>
-
-  <script>
-    (function(){
-      const tabButtons = document.querySelectorAll('.tab-btn');
-      const panels = document.querySelectorAll('.tab-panel');
-
-      function setTab(name){
-        tabButtons.forEach(btn => {
-          const active = btn.getAttribute('data-tab') === name;
-          btn.classList.toggle('active', active);
-          btn.setAttribute('aria-selected', active ? 'true' : 'false');
-        });
-
-        panels.forEach(p => {
-          const show = p.getAttribute('data-panel') === name;
-          p.hidden = !show;
-          p.classList.toggle('active', show);
-        });
-      }
-
-      tabButtons.forEach(btn => {
-        btn.addEventListener('click', () => setTab(btn.getAttribute('data-tab')));
-      });
-
-      setTab('empresa');
-    })();
-  </script>
 </body>
 </html>
