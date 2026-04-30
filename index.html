@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Wokaly - Organize a contratação de fornecedores de serviços</title>
+  <title>Wokaly - Publique sua demanda. Receba propostas. Compare com clareza.</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +31,6 @@
 
       <nav class="nav-links">
         <a href="#como-funciona">Como funciona</a>
-        <a href="#beneficios">Benefícios</a>
         <a href="/categorias.html">Categorias</a>
         <a href="/precos.html">Preços</a>
         <a href="/faq.html">FAQ</a>
@@ -43,210 +42,299 @@
     </div>
   </header>
 
-  <section id="topo" class="hero">
+  <section class="hero hero-home-v3">
     <div class="container">
-      <div class="hero-grid">
-        <div class="hero-left">
-          <h1 class="hero-title">
-            <span class="hero-title-lead">
-              Conecta <span class="txt-gradient">sua empresa</span> a fornecedores de serviços.
-            </span>
-            <span class="hero-support">Receba propostas e compare tudo em um só lugar.</span>
+      <div class="hero-home-v3__grid">
+        <div class="hero-home-v3__content">
+          <p class="hero-home-v3__eyebrow">Para empresas</p>
+
+          <h1 class="hero-home-v3__title">
+            Publique sua demanda.
+            <br>
+            Receba propostas.
+            <br>
+            Compare com <span class="txt-gradient">clareza.</span>
           </h1>
 
-          <p class="hero-sub">
-            A Wokaly conecta sua empresa ao fornecedor de serviços ideal.
+          <p class="hero-home-v3__subtitle">
+            A Wokaly organiza a contratação de serviços em um só lugar para sua empresa sair do
+            caos de indicação, WhatsApp, e-mail e planilha e decidir com mais contexto.
           </p>
 
-          <div class="hero-ctas">
-            <a class="btn btn-primary btn-lg" href="https://app.wokaly.com/">Criar conta</a>
-            <a class="btn btn-ghost btn-lg" href="/categorias.html">Ver categorias</a>
+          <div class="hero-ctas hero-home-v3__ctas">
+            <a class="btn btn-primary btn-lg" href="https://app.wokaly.com/">Publicar demanda</a>
+            <a class="btn btn-ghost btn-lg" href="#como-funciona">Como funciona</a>
+          </div>
+
+          <div class="hero-home-v3__trust">
+            <article class="trust-chip">
+              <strong>Seguro e confiável</strong>
+              <span>Fornecedores verificados e ambiente protegido.</span>
+            </article>
+
+            <article class="trust-chip">
+              <strong>Mais contexto</strong>
+              <span>Informações claras para avaliar o que importa.</span>
+            </article>
+
+            <article class="trust-chip">
+              <strong>Decisão melhor</strong>
+              <span>Compare propostas em um fluxo mais organizado.</span>
+            </article>
           </div>
         </div>
 
-        <aside class="hero-right">
-          <div class="hero-rail">
-            <article class="card">
-              <div class="card-ico">01</div>
-              <div class="card-body">
-                <h4 class="card-title">Publique a sua demanda</h4>
-                <p class="card-desc">Descreva o que você precisa contratar, o prazo e os critérios.</p>
+        <aside class="hero-home-v3__visual" aria-label="Exemplo visual da plataforma">
+          <div class="hero-board">
+            <div class="hero-board__panel hero-board__panel--dynamic" id="hero-demand-panel">
+              <div class="hero-board__status">
+                <span class="hero-board__status-dot"></span>
+                <span>Publicado</span>
               </div>
-            </article>
 
-            <article class="card">
-              <div class="card-ico">02</div>
-              <div class="card-body">
-                <h4 class="card-title">Receba propostas</h4>
-                <p class="card-desc">Fornecedores de serviços respondem a partir de uma demanda real.</p>
-              </div>
-            </article>
+              <h2 class="hero-board__title" id="hero-demand-title">Auditoria de Qualidade em Planta Industrial</h2>
 
-            <article class="card">
-              <div class="card-ico">03</div>
-              <div class="card-body">
-                <h4 class="card-title">Compare com mais clareza</h4>
-                <p class="card-desc">Escopo, prazo e custo ficam organizados no mesmo fluxo.</p>
+              <div class="hero-board__meta">
+                <span id="hero-demand-category">Categoria: Consultoria</span>
+                <span>Orçamento de referência interno</span>
+                <span id="hero-demand-code">Demanda: JOB-000240</span>
               </div>
-            </article>
+            </div>
+
+            <div class="hero-board__panel hero-board__panel--offers" id="hero-offers-panel">
+              <div class="hero-board__section-head">
+                <h3>Propostas recebidas</h3>
+                <a href="/fornecedor.html">Ver página do fornecedor</a>
+              </div>
+
+              <div class="proposal-row">
+                <div class="proposal-row__identity">
+                  <span class="proposal-row__avatar"><span class="proposal-row__avatar-letter" id="hero-proposal-1-letter">M</span></span>
+                  <div class="proposal-row__text">
+                    <strong id="hero-proposal-1-name">Matriz Prime</strong>
+                    <span id="hero-proposal-1-city">São Paulo, SP</span>
+                  </div>
+                </div>
+                <span class="proposal-row__badge" id="hero-proposal-1-badge">Participando</span>
+                <div class="proposal-row__price">
+                  <strong id="hero-proposal-1-price">R$ 32.250,00</strong>
+                  <span>Orçamento</span>
+                </div>
+              </div>
+
+              <div class="proposal-row">
+                <div class="proposal-row__identity">
+                  <span class="proposal-row__avatar"><span class="proposal-row__avatar-letter" id="hero-proposal-2-letter">C</span></span>
+                  <div class="proposal-row__text">
+                    <strong id="hero-proposal-2-name">Cedro Labs</strong>
+                    <span id="hero-proposal-2-city">Campinas, SP</span>
+                  </div>
+                </div>
+                <span class="proposal-row__badge" id="hero-proposal-2-badge">Participando</span>
+                <div class="proposal-row__price">
+                  <strong id="hero-proposal-2-price">R$ 85.500,00</strong>
+                  <span>Orçamento</span>
+                </div>
+              </div>
+
+              <div class="proposal-row">
+                <div class="proposal-row__identity">
+                  <span class="proposal-row__avatar"><span class="proposal-row__avatar-letter" id="hero-proposal-3-letter">S</span></span>
+                  <div class="proposal-row__text">
+                    <strong id="hero-proposal-3-name">Seta Operacional</strong>
+                    <span id="hero-proposal-3-city">Belo Horizonte, MG</span>
+                  </div>
+                </div>
+                <span class="proposal-row__badge" id="hero-proposal-3-badge">Participando</span>
+                <div class="proposal-row__price">
+                  <strong id="hero-proposal-3-price">R$ 3.900,00</strong>
+                  <span>Orçamento</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-board__note" id="hero-board-note">
+              Orçamento de referência visível apenas internamente para a empresa.
+            </div>
           </div>
         </aside>
       </div>
     </div>
   </section>
 
+  <section id="como-funciona" class="section section-home-steps">
+    <div class="container">
+      <div class="section-heading section-heading--center">
+        <p class="section-kicker">Como funciona</p>
+        <h2 class="section-title">Três passos para decidir melhor</h2>
+      </div>
+
+      <div class="steps-inline">
+        <article class="steps-inline__item">
+          <span class="steps-inline__number">1</span>
+          <h3>Publique sua demanda</h3>
+          <p>Descreva o que precisa, defina o escopo e organize os critérios antes de falar com o mercado.</p>
+        </article>
+
+        <article class="steps-inline__item">
+          <span class="steps-inline__number">2</span>
+          <h3>Receba propostas</h3>
+          <p>Fornecedores entram a partir de demandas reais e respondem com mais aderência ao que sua empresa pediu.</p>
+        </article>
+
+        <article class="steps-inline__item">
+          <span class="steps-inline__number">3</span>
+          <h3>Compare em um só lugar</h3>
+          <p>Preços e informações relevantes ficam no mesmo fluxo para sua empresa avaliar com mais critério.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <section class="section section-light">
     <div class="container">
-      <div class="problem-strip">
-        <div>
-          <p class="problem-strip__eyebrow"></p>
-          <h2 class="section-title">O fornecedor certo, simples assim.</h2>
+      <div class="decision-grid">
+        <div class="decision-grid__intro">
+          <p class="section-kicker">O que muda</p>
+          <h2 class="section-title">Mais clareza. Menos ruído. Melhores decisões.</h2>
+          <p class="section-sub section-sub--dark">
+            A Wokaly organiza uma etapa crítica da contratação para sua empresa depender menos de conversa espalhada e comparar melhor antes do fechamento.
+          </p>
         </div>
 
-        <div class="mini-benefit-grid">
-          <article class="mini-benefit-card">
-            <h3>Você escolhe</h3>
-            <p>Você escolhe o fornecedor ideal.</p>
+        <div class="decision-grid__list">
+          <article class="decision-point">
+            <span class="decision-point__index">01</span>
+            <div>
+              <h3>Mais tempo para planejar</h3>
+              <p>Você padroniza a demanda antes de sair pedindo proposta sem contexto comum.</p>
+            </div>
           </article>
 
-          <article class="mini-benefit-card">
-            <h3>Propostas lado a lado</h3>
-            <p>Você recebe preços para comparar no mesmo lugar.</p>
+          <article class="decision-point">
+            <span class="decision-point__index">02</span>
+            <div>
+              <h3>Menor custo para contratar</h3>
+              <p>As propostas deixam de ficar espalhadas entre canais diferentes, reduzindo retrabalho e ajudando sua empresa a contratar com mais eficiência.</p>
+            </div>
           </article>
 
-          <article class="mini-benefit-card">
-            <h3>Comparar é fácil em 1 minuto</h3>
-            <p>Comparar sem esforço.</p>
+          <article class="decision-point">
+            <span class="decision-point__index">03</span>
+            <div>
+              <h3>Mais clareza para decidir</h3>
+              <p>Demandas, propostas e contexto ficam no mesmo fluxo, sem virar uma operação pesada ou burocrática.</p>
+            </div>
           </article>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="como-funciona" class="section">
-    <div class="container">
-      <h2 class="section-title">Como funciona</h2>
-      <p class="section-sub">
-        A Wokaly organiza uma etapa que hoje costuma ficar difusa: publicar a necessidade, receber propostas e comparar com mais clareza.
-      </p>
-
-      <div class="cards-3">
-        <article class="step-card">
-          <span class="step-badge">Passo 1</span>
-          <h3>Publique sua demanda</h3>
-          <ul>
-            <li>Descreva o serviço, o escopo e o prazo</li>
-            <li>Defina critérios para comparar melhor</li>
-            <li>Use categorias e exemplos para escrever com mais clareza</li>
-          </ul>
-        </article>
-
-        <article class="step-card">
-          <span class="step-badge">Passo 2</span>
-          <h3>Receba propostas</h3>
-          <ul>
-            <li>Os fornecedores entram a partir de demandas reais</li>
-            <li>As respostas ficam no mesmo fluxo</li>
-            <li>Você reduz ruído e desencontro logo no início</li>
-          </ul>
-        </article>
-
-        <article class="step-card">
-          <span class="step-badge">Passo 3</span>
-          <h3>Compare em um só lugar</h3>
-          <ul>
-            <li>Veja escopo, prazo e custo com mais critério</li>
-            <li>Organize a decisão antes do fechamento</li>
-            <li>Siga a negociação com mais clareza</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="beneficios" class="section section-light">
-    <div class="container">
-      <h2 class="section-title">O que muda para a sua empresa</h2>
-      <p class="section-sub">
-        Menos conversa espalhada. Mais clareza para publicar, receber e comparar propostas de serviços.
-      </p>
-
-      <div class="benefit-list">
-        <article class="benefit-item">
-          <div class="benefit-ico">01</div>
-          <div class="benefit-body">
-            <h3>Mais clareza no início</h3>
-            <p>Você estrutura melhor a demanda antes de sair falando com fornecedores sem contexto comum.</p>
-          </div>
-        </article>
-
-        <article class="benefit-item">
-          <div class="benefit-ico">02</div>
-          <div class="benefit-body">
-            <h3>Mais critério para comparar</h3>
-            <p>As propostas deixam de ficar espalhadas entre canais diferentes e passam a fazer mais sentido lado a lado.</p>
-          </div>
-        </article>
-
-        <article class="benefit-item">
-          <div class="benefit-ico">03</div>
-          <div class="benefit-body">
-            <h3>Menos ruído na contratação</h3>
-            <p>O processo ganha mais organização antes do fechamento, sem virar uma comunicação pesada ou burocrática.</p>
-          </div>
-        </article>
-      </div>
-
-      <div class="benefit-ctas">
-        <a class="btn btn-primary btn-lg" href="https://app.wokaly.com/">Criar conta</a>
-        <a class="btn btn-ghost btn-lg btn-ghost--light" href="/precos.html">Ver preços</a>
       </div>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <h2 class="section-title">O que sua empresa pode publicar</h2>
-      <p class="section-sub">
-        A página de categorias ajuda a transformar uma necessidade difusa em uma demanda mais clara, com exemplos reais de contratação.
-      </p>
+      <div class="section-heading section-heading--center">
+        <p class="section-kicker">O que sua empresa pode publicar</p>
+        <h2 class="section-title">Categorias que cobrem o que sua empresa precisa</h2>
+      </div>
 
-      <div class="proof-grid">
-        <article class="proof-card">
+      <div class="category-grid-home">
+        <article class="category-card-home">
+          <div class="category-card-home__icon">RS</div>
           <h3>Recrutamento &amp; Seleção</h3>
-          <p>Contrate com escopo, SLA e critérios mais objetivos.</p>
+          <p>Contrate com escopo, SLA e critérios mais objetivos desde o início.</p>
         </article>
 
-        <article class="proof-card">
+        <article class="category-card-home">
+          <div class="category-card-home__icon">CO</div>
           <h3>Consultoria</h3>
-          <p>Organize diagnóstico, entregáveis, prazo e metodologia.</p>
+          <p>Organize diagnóstico, entregáveis, metodologia e o que precisa ser comparado.</p>
         </article>
 
-        <article class="proof-card">
+        <article class="category-card-home">
+          <div class="category-card-home__icon">MD</div>
           <h3>Marketing Digital</h3>
-          <p>Peça propostas com metas, rotina de relatório e escopo mais claro.</p>
+          <p>Peça propostas com metas, rotina de relatório e um escopo mais claro.</p>
         </article>
 
-        <article class="proof-card">
+        <article class="category-card-home">
+          <div class="category-card-home__icon">BO</div>
           <h3>BPO / Operação</h3>
           <p>Compare propostas com SLA, volume e forma de reporte definidos.</p>
         </article>
       </div>
 
-      <div class="section-actions">
-        <a class="btn btn-primary btn-lg" href="/categorias.html">Explorar categorias</a>
+      <div class="section-actions section-actions--center">
+        <a class="btn btn-ghost btn-lg btn-ghost--light" href="/categorias.html">Explorar categorias</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-light section-light--flat">
+    <div class="container">
+      <div class="supplier-cta">
+        <div>
+          <p class="supplier-cta__eyebrow">Também existe uma página para fornecedores</p>
+          <h2>Fornecedores entram na Wokaly para responder demandas reais publicadas por empresas.</h2>
+          <p>Mais contexto para responder, menos ruído e um fluxo mais organizado para participar.</p>
+        </div>
+        <a class="btn btn-primary btn-lg" href="/fornecedor.html">Conhecer página do fornecedor</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="plans-home">
+        <div class="plans-home__intro">
+          <p class="section-kicker">Planos simples para começar</p>
+          <h2 class="section-title">Escolha o plano ideal para sua empresa</h2>
+          <p class="section-sub section-sub--dark">
+            A grade completa continua na página de preços. Aqui, o foco é mostrar a progressão de estrutura da sua operação.
+          </p>
+        </div>
+
+        <div class="plans-home__grid">
+          <article class="plan-glance">
+            <strong>Basic</strong>
+            <p>Para começar a publicar demandas com mais organização.</p>
+          </article>
+
+          <article class="plan-glance plan-glance--featured">
+            <span class="plan-glance__tag">Mais escolhido</span>
+            <strong>Pro</strong>
+            <p>Mais volume, equipe e controle para decisões com mais rigor.</p>
+          </article>
+
+          <article class="plan-glance">
+            <strong>Premium</strong>
+            <p>Para empresas com operação mais intensa e necessidade de escala.</p>
+          </article>
+        </div>
+
+        <div class="section-actions section-actions--center">
+          <a class="btn btn-ghost btn-lg btn-ghost--light" href="/precos.html">Ver planos e preços</a>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="section section-light">
     <div class="container">
-      <h2 class="section-title">FAQ rápido</h2>
+      <div class="section-heading section-heading--center">
+        <p class="section-kicker">Dúvidas frequentes</p>
+        <h2 class="section-title">Perguntas que respondemos sempre</h2>
+      </div>
 
-      <div class="faq-list faq-list--light">
+      <div class="faq-list faq-list--wide faq-list--light">
         <details class="faq-item">
           <summary>Preciso criar conta para publicar uma demanda?</summary>
           <p>Sim. A conta é a porta de entrada para publicar a demanda e organizar o processo dentro da plataforma.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>O orçamento de referência fica visível para os fornecedores?</summary>
+          <p>Não necessariamente. A apresentação pública da demanda precisa respeitar o que o fluxo real da plataforma suporta.</p>
         </details>
 
         <details class="faq-item">
@@ -255,32 +343,172 @@
         </details>
 
         <details class="faq-item">
-          <summary>Que tipos de serviço entram na Wokaly?</summary>
-          <p>Serviços que possam ser descritos com escopo, prazo, critérios e entregáveis claros.</p>
-        </details>
-
-        <details class="faq-item">
-          <summary>Como o fornecedor entra no processo?</summary>
-          <p>O fornecedor entra a partir de demandas reais. A página de fornecedor explica esse fluxo com mais detalhe.</p>
+          <summary>Como faço para comparar as propostas recebidas?</summary>
+          <p>A ideia da Wokaly é centralizar a comparação em um só fluxo, com mais contexto e menos conversa espalhada.</p>
         </details>
       </div>
 
-      <div class="section-actions">
+      <div class="section-actions section-actions--center">
         <a class="btn btn-primary btn-lg" href="/faq.html">Ver FAQ completo</a>
       </div>
     </div>
   </section>
 
-  <footer class="site-footer">
-    <div class="container footer-wrap">
-      <div class="footer-brand footer-brand-app">
-        <span class="footer-brand-mark" aria-hidden="true">W</span>
-        <span class="footer-brand-name">Wokaly</span>
+  <section class="section section-home-final">
+    <div class="container">
+      <div class="final-cta">
+        <div>
+          <h2>Pronto para trazer mais clareza para suas contratações?</h2>
+          <p>Publique sua primeira demanda e receba propostas mais alinhadas ao que sua empresa precisa.</p>
+        </div>
+
+        <div class="final-cta__actions">
+          <a class="btn btn-primary btn-lg" href="https://app.wokaly.com/">Criar conta grátis</a>
+          <span>Cadastro rápido e seguro</span>
+        </div>
       </div>
-      <p class="footnote">
-        &copy; 2026 Wokaly - Todos os direitos reservados.
-      </p>
+    </div>
+  </section>
+
+  <footer class="site-footer site-footer--expanded">
+    <div class="container footer-home">
+      <div class="footer-home__brand">
+        <a class="footer-brand footer-brand-app" href="/" aria-label="Wokaly">
+          <span class="footer-brand-mark" aria-hidden="true">W</span>
+          <span class="footer-brand-name">Wokaly</span>
+        </a>
+        <p>O Wokaly conecta empresas a fornecedores de serviços com mais clareza na etapa de contratação.</p>
+      </div>
+
+      <div class="footer-home__nav">
+        <div>
+          <h3>Produto</h3>
+          <a href="#como-funciona">Como funciona</a>
+          <a href="/categorias.html">Categorias</a>
+          <a href="/precos.html">Preços</a>
+          <a href="/faq.html">FAQ</a>
+        </div>
+
+        <div>
+          <h3>Para fornecedores</h3>
+          <a href="/fornecedor.html">Página do fornecedor</a>
+          <a href="/fornecedor.html">Como participar</a>
+          <a href="/precos.html">Planos</a>
+        </div>
+
+        <div>
+          <h3>Institucional</h3>
+          <a href="https://wa.me/5521991107791" target="_blank" rel="noopener noreferrer">Contato</a>
+          <a href="/termos/">Termos de uso</a>
+          <a href="/privacidade/">Privacidade</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-home__bottom">
+      <p class="footnote">&copy; 2026 Wokaly. Todos os direitos reservados.</p>
     </div>
   </footer>
+
+  <script>
+    (() => {
+      const scenarios = [
+        {
+          title: "Auditoria de Qualidade em Planta Industrial",
+          category: "Consultoria",
+          code: "JOB-000240",
+          note: "Orçamento de referência visível apenas internamente para a empresa.",
+            proposals: [
+            { letter: "M", name: "Matriz Prime", city: "São Paulo, SP", price: "R$ 32.250,00", badge: "Participando", winner: false },
+            { letter: "C", name: "Cedro Labs", city: "Campinas, SP", price: "R$ 85.500,00", badge: "Vencedor", winner: true },
+            { letter: "S", name: "Seta Operacional", city: "Belo Horizonte, MG", price: "R$ 39.900,00", badge: "Participando", winner: false }
+            ]
+        },
+        {
+          title: "Treinamento para Desenvolvimento Gerencial",
+          category: "Consultoria",
+          code: "JOB-000318",
+          note: "Comparação centralizada para acelerar triagem e tomada de decisão.",
+            proposals: [
+            { letter: "N", name: "Norte Educação", city: "São Paulo, SP", price: "R$ 18.400,00", badge: "Participando", winner: false },
+            { letter: "A", name: "Ápice", city: "Campinas, SP", price: "R$ 22.900,00", badge: "Vencedor", winner: true },
+            { letter: "V", name: "Via Liderança", city: "Curitiba, PR", price: "R$ 16.750,00", badge: "Participando", winner: false }
+            ]
+        },
+        {
+          title: "Palestra de Saúde Mental para Equipes",
+          category: "Consultoria",
+          code: "JOB-000412",
+          note: "A empresa concentra escopo, proposta e contexto antes do fechamento.",
+            proposals: [
+            { letter: "P", name: "Plena Saúde", city: "São Paulo, SP", price: "R$ 27.800,00", badge: "Vencedor", winner: true },
+            { letter: "O", name: "Origem Humana", city: "Belo Horizonte, MG", price: "R$ 24.300,00", badge: "Participando", winner: false },
+            { letter: "F", name: "Foco Bem-Estar", city: "Rio de Janeiro, RJ", price: "R$ 31.600,00", badge: "Participando", winner: false }
+            ]
+        },
+        {
+          title: "Recrutador para Contratação de Gerente Comercial",
+          category: "Recrutamento & Seleção",
+          code: "JOB-000527",
+          note: "Mais clareza para decidir sem espalhar proposta em vários canais.",
+            proposals: [
+            { letter: "C", name: "Cresce RH", city: "Goiânia, GO", price: "R$ 7.200,00", badge: "Participando", winner: false },
+            { letter: "L", name: "Linha Talent", city: "Porto Alegre, RS", price: "R$ 8.450,00", badge: "Participando", winner: false },
+            { letter: "R", name: "Rumo Seleção", city: "Salvador, BA", price: "R$ 8.900,00", badge: "Vencedor", winner: true }
+            ]
+        }
+      ];
+
+      const title = document.getElementById("hero-demand-title");
+      const category = document.getElementById("hero-demand-category");
+      const code = document.getElementById("hero-demand-code");
+      const note = document.getElementById("hero-board-note");
+      const demandPanel = document.getElementById("hero-demand-panel");
+      const offersPanel = document.getElementById("hero-offers-panel");
+
+      if (!title || !category || !code || !note || !demandPanel || !offersPanel) return;
+
+      const proposalEls = [1, 2, 3].map((index) => ({
+        letter: document.getElementById(`hero-proposal-${index}-letter`),
+        name: document.getElementById(`hero-proposal-${index}-name`),
+        city: document.getElementById(`hero-proposal-${index}-city`),
+        price: document.getElementById(`hero-proposal-${index}-price`),
+        badge: document.getElementById(`hero-proposal-${index}-badge`)
+      }));
+
+      let currentIndex = 0;
+      const panels = [demandPanel, offersPanel, note];
+
+      function renderScenario(scenario) {
+        title.textContent = scenario.title;
+        category.textContent = `Categoria: ${scenario.category}`;
+        code.textContent = `Demanda: ${scenario.code}`;
+        note.textContent = scenario.note;
+
+        scenario.proposals.forEach((proposal, index) => {
+          const el = proposalEls[index];
+          if (!el) return;
+          el.letter.textContent = proposal.letter;
+          el.name.textContent = proposal.name;
+          el.city.textContent = proposal.city;
+          el.price.textContent = proposal.price;
+          el.badge.textContent = proposal.badge;
+          el.badge.classList.toggle("proposal-row__badge--winner", !!proposal.winner);
+        });
+      }
+
+      function rotateScenario() {
+        panels.forEach((panel) => panel.classList.add("is-swapping"));
+
+        window.setTimeout(() => {
+          currentIndex = (currentIndex + 1) % scenarios.length;
+          renderScenario(scenarios[currentIndex]);
+          panels.forEach((panel) => panel.classList.remove("is-swapping"));
+        }, 260);
+      }
+
+      window.setInterval(rotateScenario, 5200);
+    })();
+  </script>
 </body>
 </html>
