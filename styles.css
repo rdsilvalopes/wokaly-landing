@@ -2271,6 +2271,19 @@ body{
 
 .pricing-card{
   position:relative;
+  display:flex;
+  flex-direction:column;
+}
+
+.pricing-card .plan-top,
+.pricing-card .plan-price,
+.pricing-card .plan-note,
+.pricing-card .plan-features{
+  flex-shrink:0;
+}
+
+.pricing-card .btn-block{
+  margin-top:auto;
 }
 
 .pricing-card__ribbon{
