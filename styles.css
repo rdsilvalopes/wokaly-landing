@@ -2219,6 +2219,45 @@ body{
 /* ===================================================================
    Pricing V2: Free tier + Ribbon + Grids
 =================================================================== */
+.free-callout{
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:20px;
+  align-items:start;
+  padding:24px 28px;
+  border-radius:22px;
+  background:linear-gradient(180deg, #f0f5ff 0%, #e8f0ff 100%);
+  border:1px solid #d4e0ff;
+  box-shadow:0 8px 24px rgba(37, 99, 235, .06);
+}
+
+.free-callout__icon{
+  width:48px;
+  height:48px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:16px;
+  background:#ffffff;
+  border:1px solid #c7d7ff;
+  flex-shrink:0;
+}
+
+.free-callout__body h3{
+  margin:0 0 8px;
+  color:#0b1430;
+  font-size:20px;
+  font-weight:800;
+  letter-spacing:-.02em;
+}
+
+.free-callout__body p{
+  margin:0;
+  color:#475569;
+  line-height:1.65;
+  font-size:15px;
+}
+
 .pricing-card{
   position:relative;
 }
@@ -2280,5 +2319,14 @@ body{
     max-width:480px;
     margin-left:auto;
     margin-right:auto;
+  }
+
+  .free-callout{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+
+  .free-callout__icon{
+    margin:0 auto;
   }
 }
