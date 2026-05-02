@@ -339,6 +339,13 @@ body{
   color:inherit;
 }
 
+.section-title--xl{
+  font-size:42px;
+  font-weight:800;
+  letter-spacing:-.04em;
+  line-height:1.1;
+}
+
 /* (ajuste) default em seção escura */
 .section-sub{
   margin:10px 0 0;
@@ -2213,6 +2220,10 @@ body{
 
   .section{
     padding:46px 0;
+  }
+
+  .section-title--xl{
+    font-size:32px;
   }
 }
 
