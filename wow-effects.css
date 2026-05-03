@@ -1,0 +1,136 @@
+/* ════════════════════════════════════════════════════════
+   Wokaly — WOW Effects Module
+   Premium micro-interactions. Plug-and-play.
+   To disable: remove wow-effects.css + wow-effects.js.
+   ════════════════════════════════════════════════════════ */
+
+/* ── Breathing Hero Background ── */
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 50%, rgba(55, 83, 245, 0.05) 0%, transparent 50%),
+              radial-gradient(circle at 70% 30%, rgba(16, 185, 129, 0.03) 0%, transparent 40%);
+  animation: breathe 8s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes breathe {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+/* ── Magnetic Card Tilt ── */
+.hero-card {
+  transform-style: preserve-3d;
+  transition: transform 0.15s ease-out, box-shadow 0.3s ease;
+  will-change: transform;
+}
+.hero-card.is-tilting {
+  transition: transform 0.1s ease-out;
+}
+
+/* ── Button Shimmer ── */
+.btn-primary, .copa-float-cta, .hero__cta-pill {
+  position: relative;
+  overflow: hidden;
+}
+.btn-primary::after, .copa-float-cta::after, .hero__cta-pill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  animation: shimmer 4s ease-in-out infinite;
+}
+@keyframes shimmer {
+  0%, 100% { left: -100%; }
+  50% { left: 120%; }
+}
+
+/* ── Scroll Progress Trail ── */
+.wow-scroll-trail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 0%;
+  background: linear-gradient(180deg, #3753f5, #10b981);
+  z-index: 9999;
+  transition: height 0.1s ease-out;
+  border-radius: 0 2px 2px 0;
+  box-shadow: 0 0 8px rgba(55, 83, 245, 0.3);
+}
+.wow-scroll-trail.is-active {
+  box-shadow: 0 0 12px rgba(55, 83, 245, 0.5);
+}
+
+/* ── Magnetic Buttons ── */
+.btn {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn.is-magnetic {
+  transition: transform 0.1s ease;
+}
+
+/* ── Floating Particles (Hero) ── */
+.wow-particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(55, 83, 245, 0.15);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: float-particle var(--duration) ease-in-out infinite;
+  animation-delay: var(--delay);
+}
+@keyframes float-particle {
+  0%, 100% { transform: translateY(0) translateX(0); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  50% { transform: translateY(-40px) translateX(var(--x)); }
+}
+
+/* ── Reveal on Scroll ── */
+.wow-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.wow-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.wow-reveal.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+  transition: none;
+}
+
+/* ── Hover Glow for Cards ── */
+.cat-card, .pain-card, .step-card, .split-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cat-card::before, .pain-card::before, .step-card::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(55, 83, 245, 0.15), rgba(16, 185, 129, 0.1));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+.cat-card:hover::before, .pain-card:hover::before, .step-card:hover::before {
+  opacity: 1;
+}
+
+/* ════════════════════════════════════════════════════════
+   RESPONSIVE
+   ════════════════════════════════════════════════════════ */
+
+@media (max-width: 768px) {
+  .wow-scroll-trail { width: 2px; }
+  .btn::after { animation-duration: 6s; }
+}
