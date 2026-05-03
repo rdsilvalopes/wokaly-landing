@@ -1820,23 +1820,44 @@ a { text-decoration: none; color: inherit; transition: 0.2s ease; }
    RESPONSIVE — 768px
  =============================================================== */
 @media (max-width: 768px) {
+  /* Homepage */
   .nav-links { display: none; }
   .hero { padding: 60px 0 40px; }
   .hero__title { font-size: 36px; }
   .hero__subtitle-main { font-size: 20px; }
-  .copa-float-panel { position: relative; top: auto; left: auto; margin-bottom: 24px; z-index: 10; }
-  .copa-float-inner { max-width: 100%; width: 100%; padding: 18px 20px; transform: translateX(-20px); }
-  .copa-float-pill { width: 100%; justify-content: center; }
+  .copa-float-panel { left: 12px; top: 80px; }
+  .copa-float-inner { max-width: 85vw; padding: 18px 20px; }
   .copa-float-title { font-size: 18px; }
   .copa-float-desc { font-size: 13px; }
   .copa-float-cta { font-size: 13px; padding: 10px 20px; }
   .copa-float-pill { padding: 8px 14px; font-size: 12px; }
   .section { padding: 60px 0; }
   .section__title { font-size: 32px; }
+
+  /* Split Cards (empresas / prestadores) */
+  .split-grid { grid-template-columns: 1fr; }
+
+  /* Pain Grid */
+  .pain-grid { grid-template-columns: 1fr; }
+
+  /* Categories Grid */
+  .categories-grid { grid-template-columns: 1fr; }
+
+  /* Vertical Highlight (Hotelaria) */
   .vertical-highlight { padding: 32px 24px; }
   .vertical-highlight__text h2 { font-size: 28px; }
+  .vertical-highlight__content { grid-template-columns: 1fr; }
+
+  /* Dual Focus Grid */
+  .dual-focus-grid { grid-template-columns: 1fr; }
+
+  /* Steps Grid */
   .steps-grid { grid-template-columns: 1fr; gap: 32px; }
+
+  /* Final CTA */
   .final-cta { padding: 48px 24px; }
+
+  /* Footer */
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
 
   /* CTA Split */
@@ -1847,7 +1868,7 @@ a { text-decoration: none; color: inherit; transition: 0.2s ease; }
   /* Quote */
   .quote-text { font-size: 24px; padding: 0 24px; }
 
-  /* Categories */
+  /* Categories chips */
   .cat-chips { flex-wrap: wrap; }
   .cat-chip { flex: 0 0 auto; margin-right: 8px; margin-bottom: 8px; }
   .cat-card { padding: 24px; }
