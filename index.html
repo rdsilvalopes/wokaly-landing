@@ -33,10 +33,22 @@
       <!-- Copa Float Panel -->
       <div class="copa-float-panel" id="copa-float-panel">
         <button class="copa-float-close" id="copa-float-close" aria-label="Fechar">&times;</button>
-        <div class="copa-float-badge">⚽ Copa 2026</div>
-        <h3 class="copa-float-title">Publique demandas<br><span class="copa-float-highlight">grátis</span> durante a Copa</h3>
-        <p class="copa-float-desc">Aproveite o torneio e encontre prestadores de serviços enquanto o Brasil joga.</p>
-        <a href="https://app.wokaly.com" class="copa-float-cta">Comece grátis →</a>
+        <div class="copa-float-glow"></div>
+        <div class="copa-float-inner">
+          <div class="copa-float-header">
+            <div class="copa-float-ball">⚽</div>
+            <div class="copa-float-badge-text">Copa 2026</div>
+          </div>
+          <h3 class="copa-float-title">Publique demandas<br><span class="copa-float-highlight">grátis</span> durante a Copa</h3>
+          <p class="copa-float-desc">Aproveite o torneio e encontre prestadores de serviços enquanto o Brasil joga.</p>
+          <div class="copa-float-countdown" id="copa-countdown"></div>
+          <a href="https://app.wokaly.com" class="copa-float-cta">Comece grátis →</a>
+        </div>
+        <!-- Collapsed Pill -->
+        <button class="copa-float-pill" id="copa-float-pill">
+          <span class="copa-float-pill-icon">⚽</span>
+          <span class="copa-float-pill-text">Copa 2026</span>
+        </button>
       </div>
       <div class="container hero__grid">
         <div class="hero__content">
@@ -343,15 +355,73 @@
     // Copa Float Panel - slides in from left after page load
     const copaPanel = document.getElementById('copa-float-panel');
     const copaClose = document.getElementById('copa-float-close');
+    const copaPill = document.getElementById('copa-float-pill');
+    const copaCountdown = document.getElementById('copa-countdown');
     if (copaPanel) {
+      // Entry animation
       setTimeout(() => {
         copaPanel.classList.add('is-visible');
       }, 1500);
-      copaClose.addEventListener('click', () => {
-        copaPanel.classList.remove('is-visible');
-        copaPanel.classList.add('is-exiting');
-        setTimeout(() => { copaPanel.remove(); }, 500);
-      });
+      
+      // Countdown to Copa 2026 (June 11, 2026)
+      const copaDate = new Date('2026-06-11T00:00:00');
+      function updateCountdown() {
+        const now = new Date();
+        const diff = copaDate - now;
+        if (copaCountdown) {
+          if (diff > 0) {
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            copaCountdown.innerHTML = `<span class="copa-float-countdown-label">Faltam</span> ${days}d ${hours}h <span class="copa-float-countdown-label">para a Copa</span>`;
+          } else {
+            copaCountdown.innerHTML = `<span style="color:#10b981">Ao vivo</span> <span class="copa-float-countdown-label">Copa do Mundo 2026</span>`;
+          }
+        }
+      }
+      updateCountdown();
+      setInterval(updateCountdown, 60000);
+      
+      // Auto-collapse after 10s
+      let collapseTimer = setTimeout(() => {
+        if (copaPanel.classList.contains('is-visible') && !copaPanel.classList.contains('is-collapsed')) {
+          copaPanel.classList.remove('is-visible');
+          copaPanel.classList.add('is-collapsing');
+          setTimeout(() => {
+            copaPanel.classList.remove('is-collapsing');
+            copaPanel.classList.add('is-collapsed');
+          }, 500);
+        }
+      }, 10000);
+      
+      // Re-expand on pill hover
+      if (copaPill) {
+        copaPill.addEventListener('click', () => {
+          clearTimeout(collapseTimer);
+          copaPanel.classList.remove('is-collapsed');
+          copaPanel.classList.add('is-visible');
+          // Auto-collapse again after 15s
+          collapseTimer = setTimeout(() => {
+            if (copaPanel.classList.contains('is-visible') && !copaPanel.classList.contains('is-collapsed')) {
+              copaPanel.classList.remove('is-visible');
+              copaPanel.classList.add('is-collapsing');
+              setTimeout(() => {
+                copaPanel.classList.remove('is-collapsing');
+                copaPanel.classList.add('is-collapsed');
+              }, 500);
+            }
+          }, 15000);
+        });
+      }
+      
+      // Close button removes entirely
+      if (copaClose) {
+        copaClose.addEventListener('click', () => {
+          clearTimeout(collapseTimer);
+          copaPanel.classList.remove('is-visible', 'is-collapsed');
+          copaPanel.classList.add('is-exiting');
+          setTimeout(() => { copaPanel.remove(); }, 500);
+        });
+      }
     }
     
     const proposalsData = [
