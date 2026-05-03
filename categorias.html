@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wokaly — Categorias de Demandas</title>
+  <meta name="description" content="Explore categorias de demandas, veja exemplos prontos e use modelos de escopo para publicar e receber propostas.">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="/" class="brand">
+        <span class="brand-mark">W</span>
+        Wokaly
+      </a>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="/categorias.html" class="active">Categorias</a>
+        <a href="/precos.html">Planos</a>
+        <a href="/fornecedor.html">Prestador de serviços</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="https://app.wokaly.com" target="_blank">Entrar</a>
+      </nav>
+      <a href="https://app.wokaly.com" class="btn btn-primary btn-sm" style="display:none;">Comece Grátis</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero hero-sm">
+    <div class="container hero-grid-sm">
+      <div class="hero-left-sm">
+        <h1 class="hero-title hero-title-sm">
+          O que posso publicar na <span class="txt-gradient">Wokaly</span>?
+        </h1>
+        <p class="hero-sub">
+          Explore as categorias, veja exemplos prontos e use modelos de escopo para publicar demandas com clareza.
+        </p>
+        <a href="#busca" class="btn btn-primary btn-sm-hero">Explorar categorias ↓</a>
+      </div>
+      <aside class="hero-right-sm">
+        <div class="hero-visual-grid">
+          <div class="hero-vicon hero-vicon--blue">🧑‍🤝‍🧑</div>
+          <div class="hero-vicon hero-vicon--green">💰</div>
+          <div class="hero-vicon hero-vicon--purple">📣</div>
+          <div class="hero-vicon hero-vicon--amber">🧼</div>
+          <div class="hero-vicon hero-vicon--rose">🎬</div>
+          <div class="hero-vicon hero-vicon--cyan">🧠</div>
+        </div>
+        <p class="hero-visual-label">+25 categorias disponíveis</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- SEARCH + CATEGORIES -->
+  <section id="busca" class="section section-cat">
+    <div class="container">
+      <div class="cat-controls">
+        <div class="cat-search" role="search">
+          <span class="cat-search-ico" aria-hidden="true">🔎</span>
+          <input id="catSearch" type="search" placeholder="Buscar categoria: RH, marketing, limpeza..." />
+        </div>
+        <div class="cat-chips">
+          <button class="cat-chip active" type="button" data-filter="all">Todas</button>
+          <button class="cat-chip" type="button" data-filter="prof">Profissionais</button>
+          <button class="cat-chip" type="button" data-filter="ops">Operação</button>
+          <button class="cat-chip" type="button" data-filter="digital">Digital</button>
+          <button class="cat-chip" type="button" data-filter="gov">Jurídico</button>
+        </div>
+        <div class="cat-meta">
+          <span class="cat-count" id="catCount">—</span>
+          <a class="cat-cta-link" href="https://app.wokaly.com/">Publicar demanda →</a>
+        </div>
+      </div>
+
+      <div class="cat-grid" id="catGrid">
+        <article class="cat-card" data-tags="prof">
+          <div class="cat-top">
+            <div class="cat-ico cat-ico-blue">🧑‍🤝‍🧑</div>
+            <div><h3 class="cat-title">Recursos Humanos</h3><p class="cat-desc">Estrutura, processos, performance, cultura, DP.</p></div>
+          </div>
+          <details class="cat-details"><summary>Ver exemplos e critérios</summary>
+            <div class="cat-details-body">
+              <p class="cat-label">Exemplos</p><ul class="cat-list"><li>Estruturação de RH</li><li>Implantação de políticas</li><li>DP terceirizado</li></ul>
+              <p class="cat-label">Critérios</p><ul class="cat-list"><li>Entregáveis claros</li><li>Experiência no segmento</li><li>SLA e reporte</li></ul>
+            </div>
+          </details>
+        </article>
+
+        <article class="cat-card" data-tags="prof">
+          <div class="cat-top">
+            <div class="cat-ico cat-ico-blue">🧑‍💼</div>
+            <div><h3 class="cat-title">Recrutamento &amp; Seleção</h3><p class="cat-desc">Vagas operacionais, técnicas e estratégicas.</p></div>
+          </div>
+          <details class="cat-details"><summary>Ver exemplos e critérios</summary>
+            <div class="cat-details-body">
+              <p class="cat-label">Exemplos</p><ul class="cat-list"><li>10 vagas operacionais em 30 dias</li><li>Processo seletivo para gerência</li><li>R&amp;S com funil e SLA</li></ul>
+              <p class="cat-label">Critérios</p><ul class="cat-list"><li>SLA por etapa</li><li>Metodologia e evidências</li><li>Relatórios de pipeline</li></ul>
+            </div>
+          </details>
+        </article>
+
+        <article class="cat-card" data-tags="prof">
+          <div class="cat-top">
+            <div class="cat-ico cat-ico-indigo">🎯</div>
+            <div><h3 class="cat-title">Headhunter</h3><p class="cat-desc">Busca ativa para posições críticas e confidenciais.</p></div>
+          </div>
+          <details class="cat-details"><summary>Ver exemplos e critérios</summary>
+            <div class="cat-details-body">
+              <p class="cat-label">Exemplos</p><ul class="cat-list"><li>Headhunting para diretoria</li><li>Mapeamento de mercado + shortlist</li><li>Hunting para time comercial</li></ul>
+              <p class="cat-label">Critérios</p><ul class="cat-list"><li>Plano de abordagem</li><li>Garantia/substituição</li><li>Experiência por setor</li></ul>
+            </div>
+          </details>
+        </article>
+
+        <article class="cat-card" data-tags="prof">
+          <div class="cat-top">
+            <div class="cat-ico cat-ico-purple">🧩</div>
+            <div><h3 class="cat-title">Consultoria</h3><p class="cat-desc">Projetos de melhoria, diagnóstico e estratégia.</p></div>
+          </div>
+          <details class="cat-details"><summary>Ver exemplos e critérios</summary>
+            <div class="cat-details-body">
+              <p class="cat-label">Exemplos</p><ul class="cat-list"><li>Diagnóstico + plano de ação</li><li>Implantação de rotinas e KPIs</li><li>Reestruturação de áreas</li></ul>
+              <p class="cat-label">Critérios</p><ul class="cat-list"><li>Entregáveis (relatório, playbook)</li><li>Metodologia de projeto</li><li>Cases verificáveis</li></ul>
+            </div>
+          </details>
+        </article>
+
+        <article class="cat-card" data-tags="prof">
+          <div class="cat-top">
+            <div class="cat-ico cat-ico-green">🧘</div>
+            <div><h3 class="cat-title">Saúde &amp; Bem-estar</h3><p class="cat-desc">Programas de bem-estar, saúde ocupacional e clima.</p></div>
+          </div>
+          <details class="cat-details"><summary>Ver exemplos e critérios</summary>
+            <div class="cat-details-body">
+              <p class="cat-label">Exemplos</p><ul class="cat-list"><li>Programa de bem-estar (trilha mensal)</li><li>Diagnóstico de clima + intervenção</li><li>Palestras e workshops</li></ul>
+              <p class="cat-label">Critérios</p><ul class="cat-list"><li>Ações, materiais e indicadores</li><li>Credenciais da equipe</li><li>Medição de resultado</li></ul>
+            </div>
+          </details>
+        </article>
+
+        <article class="cat-card" data-tags="prof">
+          <div class="cat-top">
+            <div class="cat-ico cat-ico-amber">🧪</div>
+            <div><h3 class="cat-title">Qualidade</h3><p class="cat-desc">ISO, auditorias, padronização e melhoria contínua.</p></div>
+          </div>
+          <details class="cat-details"><summary>Ver exemplos e critérios</summary>
+            <div class="cat-details-body">
+              <p class="cat-label">Exemplos</p><ul class="cat-list"><li>Adequação ISO</li><li>Auditoria interna + plano de ação</li><li>Padronização de POPs</li></ul>
+              <p class="cat-label">Critérios</p><ul class="cat-list"><li>Experiência com padrão</li><li>Cronograma por etapa</li><li>Checklists e relatórios</li></ul>
+            </div>
+          </details>
+        </article>
+
+        <article class="cat-card" data-tags="prof">
+          <div class="cat-top">
+            <div class="cat-ico cat-ico-emerald">💰</div>
+            <div><h3 class="cat-title">Financeiro</h3><p class="cat-desc">BPO, contábil, custos, DRE e controles.</p></div>
+          </div>
+          <details class="cat-details"><summary>Ver exemplos e critérios</summary>
+            <div class="cat-details-body">
+              <p class="cat-label">Exemplos</p><ul class="cat-list"><li>BPO financeiro</li><li>Implantação de controles</li><li>Fluxo de caixa projetado</li></ul>
+              <p class="cat-label">Critérios</p><ul class="cat-list"><li>SLA de fechamento</li><li>Ferramentas e segurança</li><li>Rotinas definidas</li></ul>
+            </div>
+          </details>
+        </article>
+
+        <article class="cat-card" data-tags="prof">
+          <div class="cat-top">
+            <div class="cat-ico cat-ico-violet">🎓</div>
+            <div><h3 class="cat-title">Treinamentos</h3><p class="cat-desc">Trilhas, workshops e capacitação corporativa.</p></div>
+          </div>
+          <details class="cat-details"><summary>Ver exemplos e critérios</summary>
+            <div class="cat-details-body">
+              <p class="cat-label">Exemplos</p><ul class="cat-list"><li>Treinamento de atendimento</li><li>Trilha para liderança</li><li>Capacitação de compliance</li></ul>
+              <p class="cat-label">Critérios</p><ul class="cat-list"><li>Plano de aula e avaliação</li><li>Experiência com público</li><li>Formato e carga horária</li></ul>
+            </div>
+          </details>
+        </article>
+
+        <article class="cat-card" data-tags="prof">
+          <div class="cat-top">
+            <div class="cat-ico cat-ico-rose">🎤</div>
+            <div><h3 class="cat-title">Palestras</h3><p class="cat-desc">Palestras para times, liderança e eventos.</p></div>
+          </div>
+          <details class="cat-details"><summary>Ver exemplos e critérios</summary>
+            <div class="cat-details-body">
+              <p class="cat-label">Exemplos</p><ul class="cat-list"><li>Palestra para liderança</li><li>Treinamento interno de vendas</li><li>Palestra para evento corporativo</li></ul>
+              <p class="cat-label">Critérios</p><ul class="cat-list"><li>Tema, público e objetivo</li><li>Duração e formato</li><li>Referências anteriores</li></ul>
+            </div>
+          </details>
+        </article>
+
+        <article class="cat-card" data-tags="prof">
+          <div class="cat-top">
+            <div class="cat-ico cat-ico-slate">📌</div>
+            <div><h3 class="cat-title">Projetos</h3><p class="cat-desc">Gestão e execução com escopo e cronograma.</p></div>
+          </div>
+          <details class="cat-details"><summary>Ver exemplos e critérios</summary>
+            <div class="cat-details-body">
+              <p class="cat-label">Exemplos</p><ul class="cat-list"><li>PMO temporário</li><li>Implantação de sistema</li><li>Projeto de melhoria com KPIs</li></ul>
+              <p class="cat-label">Critérios</p><ul class="cat-list"><li>Plano de projeto (riscos, marcos)</li><li>Relatórios e governança</li><li>Aceite e entrega</li></ul>
+            </div>
+          </details>
+        </article>
+
+        <article class="cat-card" data-tags="prof">
+          <div class="cat-top">
+            <div class="cat-ico cat-ico-teal">🧾</div>
+            <div><h3 class="cat-title">Auditoria</h3><p class="cat-desc">Auditorias, conformidade e revisão.</p></div>
+          </div>
+          <details class="cat-details"><summary>Ver exemplos e critérios</summary>
+            <div class="cat-details-body">
+              <p class="cat-label">Exemplos</p><ul class="cat-list"><li>Auditoria interna + relatório</li><li>Revisão de conformidade</li><li>Plano de adequação</li></ul>
+              <p class="cat-label">Critérios</p><ul class="cat-list"><li>Escopo definido</li><li>Modelo de evidência</li><li>Experiência comprovada</li></ul>
+            </div>
+          </details>
+        </article>
+
+        <article class="cat-card" data-tags="prof gov">
+          <div class="cat-top">
+            <div class="cat-ico cat-ico-indigo">⚖️</div>
+            <div><h3 class="cat-title">Jurídico &amp; Compliance</h3><p class="cat-desc">Contratos, assessoria legal e LGPD.</p></div>
+          </div>
+          <details class="cat-details"><summary>Ver exemplos e critérios</summary>
+            <div class="cat-details-body">
+              <p class="cat-label">Exemplos</p><ul class="cat-list"><li>Elaboração/revisão de contratos</li><li>Consultoria trabalhista</li><li>Adequação à LGPD</li></ul>
+              <p class="cat-label">Critérios</p><ul class="cat-list"><li>Entregáveis (minutas, políticas)</li><li>Prazo e suporte</li><li>Confidencialidade</li></ul>
+            </div>
+          </details>
+        </article>
+
+        <article class="cat-card" data-tags="prof">
+          <div class="cat-top">
+            <div class="cat-ico cat-ico-cyan">🧠</div>
+            <div><h3 class="cat-title">Tecnologia &amp; Dados</h3><p class="cat-desc">Dev, BI, automações e integrações.</p></div>
+          </div>
+          <details class="cat-details"><summary>Ver exemplos e critérios</summary>
+            <div class="cat-details-body">
+              <p class="cat-label">Exemplos</p><ul class="cat-list"><li>Dashboard BI</li><li>Automação entre sistemas</li><li>Projeto de desenvolvimento</li></ul>
+              <p class="cat-label">Critérios</p><ul class="cat-list"><li>Stack e requisitos</li><li>Prazo e SLA</li><li>Segurança e boas práticas</li></ul>
+            </div>
+          </details>
+        </article>
+
+        <article class="cat-card" data-tags="digital">
+          <div class="cat-top">
+            <div class="cat-ico cat-ico-pink">📣</div>
+            <div><h3 class="cat-title">Marketing Digital</h3><p class="cat-desc">SEO, tráfego pago, redes sociais e conteúdo.</p></div>
+          </div>
+          <details class="cat-details"><summary>Ver exemplos e critérios</summary>
+            <div class="cat-details-body">
+              <p class="cat-label">Exemplos</p><ul class="cat-list"><li>Gestão de campanhas (Google/Meta)</li><li>SEO técnico + plano de conteúdo</li><li>Calendário editorial</li></ul>
+              <p class="cat-label">Critérios</p><ul class="cat-list"><li>KPIs (CPA, ROAS, leads)</li><li>Relatórios periódicos</li><li>Portfólio verificável</li></ul>
+            </div>
+          </details>
+        </article>
+
+        <article class="cat-card" data-tags="digital">
+          <div class="cat-top">
+            <div class="cat-ico cat-ico-purple">🎨</div>
+            <div><h3 class="cat-title">Design Gráfico &amp; Criativo</h3><p class="cat-desc">Identidade visual, peças, UI/UX e vídeos.</p></div>
+          </div>
+          <details class="cat-details"><summary>Ver exemplos e critérios</summary>
+            <div class="cat-details-body">
+              <p class="cat-label">Exemplos</p><ul class="cat-list"><li>Identidade visual completa</li><li>Kit de peças para redes</li><li>UX/UI para landing page</li></ul>
+              <p class="cat-label">Critérios</p><ul class="cat-list"><li>Portfólio no seu estilo</li><li>Arquivos editáveis</li><li>Revisões e prazos</li></ul>
+            </div>
+          </details>
+        </article>
+
+        <article class="cat-card" data-tags="digital">
+          <div class="cat-top">
+            <div class="cat-ico cat-ico-blue">✍️</div>
+            <div><h3 class="cat-title">Redação &amp; Tradução</h3><p class="cat-desc">Artigos, copywriting, tradução e legendas.</p></div>
+          </div>
+          <details class="cat-details"><summary>Ver exemplos e critérios</summary>
+            <div class="cat-details-body">
+              <p class="cat-label">Exemplos</p><ul class="cat-list"><li>Artigos SEO (4/mês)</li><li>Copy para landing page</li><li>Tradução técnica + revisão</li></ul>
+              <p class="cat-label">Critérios</p><ul class="cat-list"><li>Nível de linguagem</li><li>SEO e originalidade</li><li>Prazo por entrega</li></ul>
+            </div>
+          </details>
+        </article>
+
+        <article class="cat-card" data-tags="ops">
+          <div class="cat-top">
+            <div class="cat-ico cat-ico-slate">🏢</div>
+            <div><h3 class="cat-title">BPO / Operação</h3><p class="cat-desc">Terceirização de rotinas com SLA.</p></div>
+          </div>
+          <details class="cat-details"><summary>Ver exemplos e critérios</summary>
+            <div class="cat-details-body">
+              <p class="cat-label">Exemplos</p><ul class="cat-list"><li>BPO administrativo</li><li>BPO financeiro</li><li>Operação com equipe alocada</li></ul>
+              <p class="cat-label">Critérios</p><ul class="cat-list"><li>SLA (tempo, volume, qualidade)</li><li>Gestão e reporte</li><li>Segurança de dados</li></ul>
+            </div>
+          </details>
+        </article>
+
+        <article class="cat-card" data-tags="ops">
+          <div class="cat-top">
+            <div class="cat-ico cat-ico-emerald">🧑‍💻</div>
+            <div><h3 class="cat-title">Administrativo &amp; Suporte</h3><p class="cat-desc">Assistência virtual, planilhas e atendimento.</p></div>
+          </div>
+          <details class="cat-details"><summary>Ver exemplos e critérios</summary>
+            <div class="cat-details-body">
+              <p class="cat-label">Exemplos</p><ul class="cat-list"><li>SAC via chat/telefone</li><li>Gestão de planilhas</li><li>Entrada de dados</li></ul>
+              <p class="cat-label">Critérios</p><ul class="cat-list"><li>Horários e volume</li><li>Qualidade (NPS)</li><li>Confidencialidade</li></ul>
+            </div>
+          </details>
+        </article>
+
+        <article class="cat-card" data-tags="ops">
+          <div class="cat-top">
+            <div class="cat-ico cat-ico-cyan">🧼</div>
+            <div><h3 class="cat-title">Limpeza &amp; Facilities</h3><p class="cat-desc">Limpeza corporativa e manutenção predial.</p></div>
+          </div>
+          <details class="cat-details"><summary>Ver exemplos e critérios</summary>
+            <div class="cat-details-body">
+              <p class="cat-label">Exemplos</p><ul class="cat-list"><li>Limpeza diária com checklist</li><li>Conservação predial</li><li>Facilities multi-unidade</li></ul>
+              <p class="cat-label">Critérios</p><ul class="cat-list"><li>Escala e materiais</li><li>Checklists e inspeções</li><li>Regras de acesso</li></ul>
+            </div>
+          </details>
+        </article>
+
+        <article class="cat-card" data-tags="ops">
+          <div class="cat-top">
+            <div class="cat-ico cat-ico-red">🛡️</div>
+            <div><h3 class="cat-title">Segurança &amp; Vigilância</h3><p class="cat-desc">Portaria, monitoramento e segurança patrimonial.</p></div>
+          </div>
+          <details class="cat-details"><summary>Ver exemplos e critérios</summary>
+            <div class="cat-details-body">
+              <p class="cat-label">Exemplos</p><ul class="cat-list"><li>Portaria 12x36</li><li>Monitoramento e ronda</li><li>Controle de acesso</li></ul>
+              <p class="cat-label">Critérios</p><ul class="cat-list"><li>Escala e cobertura</li><li>Treinamento</li><li>Relatórios de incidentes</li></ul>
+            </div>
+          </details>
+        </article>
+
+        <article class="cat-card" data-tags="ops">
+          <div class="cat-top">
+            <div class="cat-ico cat-ico-amber">🚚</div>
+            <div><h3 class="cat-title">Logística &amp; Suprimentos</h3><p class="cat-desc">Estoque, transporte e compras terceirizadas.</p></div>
+          </div>
+          <details class="cat-details"><summary>Ver exemplos e critérios</summary>
+            <div class="cat-details-body">
+              <p class="cat-label">Exemplos</p><ul class="cat-list"><li>Gestão de estoque</li><li>Transporte com SLA</li><li>Compras e cotação</li></ul>
+              <p class="cat-label">Critérios</p><ul class="cat-list"><li>SLA e rastreabilidade</li><li>Ferramentas e relatórios</li><li>Políticas e compliance</li></ul>
+            </div>
+          </details>
+        </article>
+
+        <article class="cat-card" data-tags="ops">
+          <div class="cat-top">
+            <div class="cat-ico cat-ico-orange">🏗️</div>
+            <div><h3 class="cat-title">Engenharia &amp; Manutenção</h3><p class="cat-desc">Projetos técnicos, laudos e execução.</p></div>
+          </div>
+          <details class="cat-details"><summary>Ver exemplos e critérios</summary>
+            <div class="cat-details-body">
+              <p class="cat-label">Exemplos</p><ul class="cat-list"><li>Manutenção industrial</li><li>Laudos e inspeções</li><li>Projeto técnico + execução</li></ul>
+              <p class="cat-label">Critérios</p><ul class="cat-list"><li>Normas e ART</li><li>Prazos e garantias</li><li>Segurança e equipe</li></ul>
+            </div>
+          </details>
+        </article>
+
+        <article class="cat-card" data-tags="ops">
+          <div class="cat-top">
+            <div class="cat-ico cat-ico-rose">🎬</div>
+            <div><h3 class="cat-title">Eventos &amp; Produção</h3><p class="cat-desc">Eventos corporativos, audiovisual e fotografia.</p></div>
+          </div>
+          <details class="cat-details"><summary>Ver exemplos e critérios</summary>
+            <div class="cat-details-body">
+              <p class="cat-label">Exemplos</p><ul class="cat-list"><li>Evento corporativo completo</li><li>Produção audiovisual</li><li>Cobertura fotográfica</li></ul>
+              <p class="cat-label">Critérios</p><ul class="cat-list"><li>Escopo de entrega</li><li>Equipamentos e equipe</li><li>Prazos e revisões</li></ul>
+            </div>
+          </details>
+        </article>
+      </div>
+
+      <div id="catEmpty" class="cat-empty" hidden>Nenhuma categoria encontrada com os filtros atuais.</div>
+    </div>
+  </section>
+
+  <!-- FORNECEDOR CTA -->
+  <section class="section section-fornecedor">
+    <div class="container">
+      <div class="fornecedor-grid">
+        <div class="fornecedor-card fornecedor-card--company">
+          <div class="fornecedor-card__badge">Grátis para começar</div>
+          <h3>Para empresas</h3>
+          <p>Publique demandas sem custo. Receba propostas organizadas e compare antes de decidir.</p>
+          <ul class="check-list">
+            <li><svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Publique demandas — <strong>grátis</strong></li>
+            <li><svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Receba múltiplos orçamentos</li>
+            <li><svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Veja a disputa de preços lado a lado</li>
+            <li><svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Decida quem entra na sua operação</li>
+          </ul>
+          <a href="https://app.wokaly.com" class="btn btn-primary">Criar conta grátis</a>
+        </div>
+        <div class="fornecedor-card fornecedor-card--supplier">
+          <div class="fornecedor-card__badge fornecedor-card__badge--blue">Grátis para começar</div>
+          <h3>Para prestadores de serviços</h3>
+          <p>Receba demandas reais na sua região e envie propostas direto para o decisor.</p>
+          <ul class="check-list">
+            <li><svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Receba demandas qualificadas</li>
+            <li><svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Envie propostas direto para o decisor</li>
+            <li><svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Pague apenas por participação ativa</li>
+            <li><svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Cresça com reputação e histórico</li>
+          </ul>
+          <a href="https://app.wokaly.com" class="btn btn-outline">Quero fornecer</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO ESCREVER (compacto) -->
+  <section id="como-escrever" class="section section-pattern">
+    <div class="container">
+      <h2 class="section-title">Como escrever uma demanda</h2>
+      <p class="section-sub">Você não precisa escrever bonito — precisa escrever <strong>claro</strong>.</p>
+
+      <div class="steps-compact">
+        <div class="step-compact">
+          <span class="step-compact__num">1</span>
+          <h4>Defina o escopo</h4>
+          <p>O que você quer? Qual resultado? O que está fora?</p>
+        </div>
+        <div class="step-compact">
+          <span class="step-compact__num">2</span>
+          <h4>Entregáveis e prazos</h4>
+          <p>O que será entregue? Quando começa e termina?</p>
+        </div>
+        <div class="step-compact">
+          <span class="step-compact__num">3</span>
+          <h4>Critérios de seleção</h4>
+          <p>Preço, SLA, experiência, cases e garantias.</p>
+        </div>
+      </div>
+
+      <details class="scope-compact">
+        <summary>📄 Ver modelo de escopo pronto (copie e cole)</summary>
+        <pre class="scope-compact__pre"><code>[CATEGORIA]:
+[OBJETIVO]:
+[ESCOPO]:
+- O que será feito:
+- Fora do escopo:
+[ENTREGÁVEIS]:
+[PRAZO]:
+- Início: __/__/____
+- Término: __/__/____
+[CRITÉRIOS DE SELEÇÃO]:
+- Peso 1: Preço / Faixa
+- Peso 2: Experiência no segmento
+- Peso 3: SLA e prazos</code></pre>
+        <a href="https://app.wokaly.com" class="btn btn-primary btn-sm" style="margin-top:16px;">Usar modelo na plataforma →</a>
+      </details>
+    </div>
+  </section>
+
+  <!-- FOOTER (igual à home) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="brand"><span class="brand-mark">W</span> Wokaly</a>
+          <p>Gestão centralizada de múltiplos prestadores de serviços. Transparência real, do orçamento à entrega.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Plataforma</h4>
+          <ul>
+            <li><a href="categorias.html">Categorias</a></li>
+            <li><a href="precos.html">Planos</a></li>
+            <li><a href="fornecedor.html">Prestador de serviços</a></li>
+            <li><a href="/">Como funciona</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="#">Trabalhe conosco</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacidade.html">Privacidade</a></li>
+            <li><a href="termos.html">Termos de uso</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; <span id="year"></span> Wokaly. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    (function(){
+      const searchEl = document.getElementById('catSearch');
+      const grid = document.getElementById('catGrid');
+      const cards = Array.from(grid.querySelectorAll('.cat-card'));
+      const chips = Array.from(document.querySelectorAll('.cat-chip'));
+      const countEl = document.getElementById('catCount');
+      const emptyEl = document.getElementById('catEmpty');
+      let activeFilter = 'all';
+
+      function normalize(s){ return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''); }
+
+      function apply(){
+        const q = normalize(searchEl.value);
+        let visible = 0;
+        cards.forEach(card => {
+          const title = normalize(card.querySelector('.cat-title')?.textContent);
+          const desc = normalize(card.querySelector('.cat-desc')?.textContent);
+          const tags = normalize(card.getAttribute('data-tags') || '');
+          const matchText = !q || title.includes(q) || desc.includes(q) || tags.includes(q);
+          const matchFilter = (activeFilter === 'all') || tags.split(' ').includes(activeFilter);
+          const show = matchText && matchFilter;
+          card.style.display = show ? '' : 'none';
+          if(show) visible++;
+        });
+        countEl.textContent = visible + ' categoria(s)';
+        emptyEl.hidden = visible !== 0;
+      }
+
+      chips.forEach(btn => {
+        btn.addEventListener('click', () => {
+          chips.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.getAttribute('data-filter') || 'all';
+          apply();
+        });
+      });
+
+      searchEl.addEventListener('input', apply);
+      apply();
+    })();
+  </script>
+</body>
+</html>

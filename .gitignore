@@ -1,0 +1,9 @@
+node_modules/
+.next/
+dist/
+.env*
+*.bak*
+*.docx
+*.pdf
+.DS_Store
+Thumbs.db

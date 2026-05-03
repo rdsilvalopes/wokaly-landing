@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wokaly — Compare, decida e escolha o orçamento ideal</title>
+  <meta name="description" content="Gestão centralizada de múltiplos prestadores de serviços. Compare orçamentos lado a lado, sem compromisso, e escolha a melhor proposta.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="/" class="brand">
+        <span class="brand-mark">W</span>
+        Wokaly
+      </a>
+      <nav class="nav-links">
+        <a href="categorias.html">Categorias</a>
+        <a href="precos.html">Planos</a>
+        <a href="fornecedor.html">Prestador de serviços</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="https://app.wokaly.com" target="_blank">Entrar</a>
+      </nav>
+      <a href="https://app.wokaly.com" class="btn btn-primary btn-sm" style="display:none;">Comece Grátis</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <h1 class="hero__title">Compare, decida e escolha o orçamento ideal.</h1>
+          <p class="hero__subtitle-main">Simplifique a contratação para sua empresa, hotel ou evento.</p>
+          <p class="hero__subtitle hide-on-mobile">
+            Publique sua demanda uma vez e receba propostas lado a lado. Veja preços, histórico e documentação. Você decide quem faz sentido — sem intermediários.
+          </p>
+          <div class="hero__tags hide-on-mobile">
+            <span class="hero__tag">Consultoria</span>
+            <span class="hero__tag">Treinamentos</span>
+            <span class="hero__tag">Palestras</span>
+            <span class="hero__tag">Marketing</span>
+            <span class="hero__tag">Eventos</span>
+            <span class="hero__tag">Recrutamento</span>
+          </div>
+        </div>
+        
+        <div class="hero__visual">
+          <div class="hero-card" id="dynamic-card">
+            <span class="card-badge" id="card-badge">3 Propostas Recebidas</span>
+            <div class="hero-card__transition" id="card-transition">
+              <div class="card-header">
+                <span class="card-header__service" id="card-service">Treinamento de Liderança — 40 pessoas</span>
+                <span class="card-header__client" id="card-client">Tech Solutions Ltda • São Paulo/SP</span>
+              </div>
+              <div class="proposals-list" id="proposals-list">
+                <!-- Populated by JS -->
+              </div>
+            </div>
+          </div>
+          <a href="https://app.wokaly.com" class="hero__cta-pill">Comece grátis — Cadastre-se</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="split-grid">
+          <div class="split-card split-card--company">
+            <div class="split-card__badge">Comece grátis</div>
+            <h3>Para empresas</h3>
+            <p>Publique demandas sem custo. Receba propostas organizadas e compare antes de decidir.</p>
+            <ul class="check-list">
+              <li><svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Publique demandas — <strong>grátis</strong></li>
+              <li><svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Receba múltiplos orçamentos</li>
+              <li><svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Veja a disputa de preços lado a lado</li>
+              <li><svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Verifique o perfil do prestador e reputação</li>
+              <li><svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Decida quem entra na sua operação</li>
+            </ul>
+          </div>
+          <div class="split-card split-card--supplier">
+            <div class="split-card__badge split-card__badge--blue">Comece grátis</div>
+            <h3>Para prestadores de serviços</h3>
+            <p>Receba demandas reais na sua região e envie propostas direto para o decisor.</p>
+            <ul class="check-list">
+              <li><svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Receba demandas qualificadas</li>
+              <li><svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Envie propostas direto para o decisor</li>
+              <li><svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Pague apenas por participação ativa</li>
+              <li><svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg> Cresça com reputação e histórico</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <div class="container">
+        <p class="quote-text">"Encontrar quem faz bem — e cobra justo — deveria ser simples."</p>
+      </div>
+    </section>
+
+    <section class="section section-light" id="categorias">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__kicker">O que você precisa?</span>
+          <h2 class="section__title">Serviços prontos para cotação</h2>
+          <p class="section__subtitle">Categorias reais, usadas por empresas de todos os portes. Encontre prestadores de serviços especializados em poucos cliques.</p>
+        </div>
+        <div class="categories-grid">
+          <a href="categorias.html#consultoria" class="cat-card">
+            <div class="cat-card__icon"><svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg></div>
+            <h3 class="cat-card__title">Consultoria</h3>
+            <p class="cat-card__desc">Diagnóstico de processos, estratégia, governança e implantação de melhorias.</p>
+          </a>
+          <a href="categorias.html#treinamentos" class="cat-card">
+            <div class="cat-card__icon"><svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg></div>
+            <h3 class="cat-card__title">Treinamentos</h3>
+            <p class="cat-card__desc">Capacitação corporativa, trilhas de aprendizado e workshops por público.</p>
+          </a>
+          <a href="categorias.html#palestras" class="cat-card">
+            <div class="cat-card__icon"><svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13l4.27-12.19L12 5.882"/></svg></div>
+            <h3 class="cat-card__title">Palestras</h3>
+            <p class="cat-card__desc">Palestras corporativas para times, liderança, eventos internos e engajamento.</p>
+          </a>
+          <a href="categorias.html#marketing" class="cat-card">
+            <div class="cat-card__icon"><svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"/></svg></div>
+            <h3 class="cat-card__title">Marketing Digital</h3>
+            <p class="cat-card__desc">SEO, redes sociais, tráfego pago, e-mail marketing e criação de conteúdo.</p>
+          </a>
+          <a href="categorias.html#rh" class="cat-card">
+            <div class="cat-card__icon"><svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
+            <h3 class="cat-card__title">Recursos Humanos</h3>
+            <p class="cat-card__desc">Estruturação de RH, departamento pessoal, políticas e gestão de pessoas.</p>
+          </a>
+          <a href="categorias.html#tecnologia" class="cat-card">
+            <div class="cat-card__icon"><svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg></div>
+            <h3 class="cat-card__title">Tecnologia &amp; Dados</h3>
+            <p class="cat-card__desc">Desenvolvimento, BI, automações, integrações e suporte técnico.</p>
+          </a>
+          <a href="categorias.html#eventos" class="cat-card">
+            <div class="cat-card__icon"><svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg></div>
+            <h3 class="cat-card__title">Eventos &amp; Produção</h3>
+            <p class="cat-card__desc">Sonorização, iluminação, coffee break, fotografia e organização completa.</p>
+          </a>
+          <a href="categorias.html#financeiro" class="cat-card">
+            <div class="cat-card__icon"><svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg></div>
+            <h3 class="cat-card__title">Financeiro &amp; BPO</h3>
+            <p class="cat-card__desc">BPO financeiro, contábil, planejamento, custos e controles internos.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__kicker">A dor que gerou o Wokaly</span>
+          <h2 class="section__title">Sua empresa precisa evoluir</h2>
+          <p class="section__subtitle">
+            Consultoria para reestruturar processos. Treinamentos para desenvolver gente. Palestras para engajar times. Encontrar quem faz bem — e cobra justo — deveria ser simples.
+          </p>
+        </div>
+        <div class="pain-grid">
+          <div class="pain-card">
+            <div class="pain-card__icon">🧩</div>
+            <h3>Consultoria de Processos</h3>
+            <p>Diagnóstico, plano de ação e implementação. Compare metodologias e preços de consultores qualificados.</p>
+          </div>
+          <div class="pain-card">
+            <div class="pain-card__icon">🎓</div>
+            <h3>Treinamentos Corporativos</h3>
+            <p>Liderança, atendimento, vendas, compliance. Receba propostas de instrutores com experiência comprovada.</p>
+          </div>
+          <div class="pain-card">
+            <div class="pain-card__icon">🎤</div>
+            <h3>Palestras &amp; Eventos Internos</h3>
+            <p>Motivacional, técnico, institucional. Encontre palestrantes que entregam impacto real, não só palco.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="vertical-highlight">
+          <div class="vertical-highlight__content">
+            <div class="vertical-highlight__text">
+              <h2>Solução para Hotelaria & Eventos</h2>
+              <p>Quem vive de evento, vive de urgência. Resolva o caos de múltiplos prestadores de serviços simultâneos com gestão centralizada. Valide preços do mercado em tempo real.</p>
+              <div class="vertical-highlight__stats">
+                <div class="v-stat">
+                  <div class="v-stat__val">45min</div>
+                  <div class="v-stat__label">Tempo médio p/ 1ª proposta</div>
+                </div>
+                <div class="v-stat">
+                  <div class="v-stat__val">15+</div>
+                  <div class="v-stat__label">Serviços por evento</div>
+                </div>
+              </div>
+              <a class="btn btn-lg btn-hotel" href="categorias.html">Ver soluções para Eventos</a>
+            </div>
+            <div class="vertical-highlight__visual">
+              <div class="vh-title">Solicitações Recentes</div>
+              <div class="vh-item">
+                <span class="vh-label">Som & Iluminação — Congresso Tech</span>
+                <span class="vh-price">R$ 12.500</span>
+              </div>
+              <div class="vh-item">
+                <span class="vh-label">Buffet Coffee Break — Hotel Center</span>
+                <span class="vh-price">R$ 3.200</span>
+              </div>
+              <div class="vh-item">
+                <span class="vh-label">Limpeza Pós-Obra — Ala Sul</span>
+                <span class="vh-price">R$ 5.800</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="dual-focus-grid">
+          <div class="focus-card focus-card--corp">
+            <span class="focus-card__kicker">EMPRESAS</span>
+            <h3>Quem cuida de empresa sabe: serviço bom não aparece sozinho.</h3>
+            <p>
+              Publique a demanda e receba propostas de prestadores de serviços verificados. Consultoria, treinamento, marketing, TI ou financeiro. Compare lado a lado e decida quem entra na sua operação.
+            </p>
+            <div class="focus-stats">
+              <div class="f-stat"><div class="f-stat__val">Comparação lado a lado</div><div class="f-stat__label">Preços, escopo e prazos visíveis</div></div>
+              <div class="f-stat"><div class="f-stat__val">Prestadores reais</div><div class="f-stat__label">Verificação de documentos e notas</div></div>
+            </div>
+            <a href="https://app.wokaly.com" class="btn btn-secondary">Publicar demanda</a>
+          </div>
+          <div class="focus-card focus-card--hotel">
+            <span class="focus-card__kicker">HOTELARIA & EVENTOS</span>
+            <h3>Quem vive de evento sabe: o serviço não pode falhar.</h3>
+            <p>
+              Limpeza pós-evento, montagem de estrutura, segurança, buffet. Compare prestadores de serviços que já atuam no segmento e decida com base em quem entrega no prazo.
+            </p>
+            <div class="focus-stats">
+              <div class="f-stat"><div class="f-stat__val">Turnaround rápido</div><div class="f-stat__label">Respostas em horas, não dias</div></div>
+              <div class="f-stat"><div class="f-stat__val">Foco em hospitalidade</div><div class="f-stat__label">Prestadores do setor</div></div>
+            </div>
+            <a href="https://app.wokaly.com" class="btn btn-primary">Ver soluções</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="como-funciona">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__kicker">Como funciona</span>
+          <h2 class="section__title">Você está no controle</h2>
+          <p class="section__subtitle">Sem intermediários. Você publica, recebe propostas, compara e decide. Simples assim.</p>
+        </div>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-card__num">1</div>
+            <h3 class="step-card__title">Publique a demanda</h3>
+            <p class="step-card__desc">Descreva o que precisa uma única vez. O Wokaly organiza o escopo e alerta prestadores de serviços qualificados.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-card__num">2</div>
+            <h3 class="step-card__title">Receba e compare</h3>
+            <p class="step-card__desc">As propostas chegam lado a lado. Veja preço, histórico, documentação e avaliações antes de decidir.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-card__num">3</div>
+            <h3 class="step-card__title">Escolha o melhor</h3>
+            <p class="step-card__desc">Compare tudo em um só lugar. Feche com quem fizer sentido, diretamente, sem intermediários.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="final-cta">
+          <div class="final-cta__kicker">Grátis para começar</div>
+          <h2>Publique sua primeira demanda hoje</h2>
+          <p>Cadastre sua empresa sem custo. Receba propostas, compare e decida. Só paga quem fornece.</p>
+          <a href="https://app.wokaly.com" class="btn btn-primary btn-lg">Criar conta grátis</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="brand"><span class="brand-mark">W</span> Wokaly</a>
+          <p>Gestão centralizada de múltiplos prestadores de serviços. Transparência real, do orçamento à entrega.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Plataforma</h4>
+          <ul>
+            <li><a href="categorias.html">Categorias</a></li>
+            <li><a href="precos.html">Planos</a></li>
+            <li><a href="fornecedor.html">Prestador de serviços</a></li>
+            <li><a href="#como-funciona">Como funciona</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="#">Trabalhe conosco</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacidade.html">Privacidade</a></li>
+            <li><a href="termos.html">Termos de uso</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; <span id="year"></span> Wokaly. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    const proposalsData = [
+      {
+        service: "Headhunter — Diretor Financeiro (CFO)",
+        client: "Indústria ABC • São Paulo/SP",
+        badge: "3 Propostas Recebidas",
+        rows: [
+          { name: "Global Search RH", loc: "São Paulo/SP", price: "18% do salário anual", status: "Fee competitivo", winner: false },
+          { name: "Talent Hunters", loc: "Campinas/SP", price: "R$ 12.000 fixo", status: "Garantia de 6 meses", winner: true },
+          { name: "Executive Finders", loc: "São Paulo/SP", price: "20% + Bônus", status: "Shortlist em 15 dias", winner: false }
+        ]
+      },
+      {
+        service: "Treinamento de Liderança — 40 pessoas",
+        client: "Tech Solutions Ltda • São Paulo/SP",
+        badge: "3 Propostas Recebidas",
+        rows: [
+          { name: "LideraMais Consultoria", loc: "São Paulo/SP", price: "R$ 8.500", status: "Presencial, 8h — valor único", winner: false },
+          { name: "GestãoPro Academy", loc: "Campinas/SP", price: "R$ 7.200", status: "Online, 2 módulos", winner: true },
+          { name: "RH & Desenvolvimento", loc: "São Paulo/SP", price: "R$ 9.800", status: "Presencial + material", winner: false }
+        ]
+      },
+      {
+        service: "Palestra Motivacional — 200 pessoas",
+        client: "Grupo Varejo Sul • Porto Alegre/RS",
+        badge: "3 Propostas Recebidas",
+        rows: [
+          { name: "Carlos Mendes Palestras", loc: "POA/RS", price: "R$ 6.500", status: "2h + interação — por evento", winner: true },
+          { name: "Inspira Eventos", loc: "Canoas/RS", price: "R$ 5.800", status: "1h30 + Q&A", winner: false },
+          { name: "Palestras Pro", loc: "POA/RS", price: "R$ 7.200", status: "2h + material", winner: false }
+        ]
+      },
+      {
+        service: "Consultoria de Processos — Diagnóstico",
+        client: "Indústria ABC • Belo Horizonte/MG",
+        badge: "4 Propostas Recebidas",
+        rows: [
+          { name: "ProcessoClear", loc: "BH/MG", price: "R$ 15.000", status: "4 semanas — por projeto", winner: false },
+          { name: "Estratégia Ativa", loc: "Contagem/MG", price: "R$ 12.500", status: "3 semanas", winner: true },
+          { name: "Gestão Eficiente", loc: "BH/MG", price: "R$ 18.000", status: "6 semanas + implantação", winner: false },
+          { name: "Lean Works", loc: "BH/MG", price: "R$ 14.200", status: "4 semanas + relatório", winner: false }
+        ]
+      },
+      {
+        service: "Coffee Break — 150 pessoas",
+        client: "Hotel Grand Plaza • São Paulo/SP",
+        badge: "2 Propostas Recebidas",
+        rows: [
+          { name: "Sabor & Arte Buffet", loc: "São Paulo/SP", price: "R$ 4.500", status: "Menu completo — por evento", winner: true },
+          { name: "Catering Premium", loc: "Guarulhos/SP", price: "R$ 3.800", status: "Montagem inclusa", winner: false }
+        ]
+      },
+      {
+        service: "Sonorização & Iluminação — Evento",
+        client: "Centro de Convenções • Rio de Janeiro/RJ",
+        badge: "3 Propostas Recebidas",
+        rows: [
+          { name: "Luz & Som Pro", loc: "Rio de Janeiro/RJ", price: "R$ 8.200", status: "Setup + operador — por evento", winner: true },
+          { name: "EventosTech", loc: "Niterói/RJ", price: "R$ 7.500", status: "Equipamento básico", winner: false },
+          { name: "StagePro Audio", loc: "Barra/RJ", price: "R$ 9.800", status: "Full production", winner: false }
+        ]
+      }
+    ];
+
+    const cardService = document.getElementById('card-service');
+    const cardClient = document.getElementById('card-client');
+    const cardBadge = document.getElementById('card-badge');
+    const proposalsList = document.getElementById('proposals-list');
+    const cardTransition = document.getElementById('card-transition');
+
+    function renderCard(data) {
+      cardTransition.classList.add('is-swapping');
+      setTimeout(() => {
+        cardService.textContent = data.service;
+        cardClient.textContent = data.client;
+        cardBadge.textContent = data.badge;
+        proposalsList.innerHTML = '';
+        data.rows.forEach((row, i) => {
+          const el = document.createElement('div');
+          el.className = 'card-row';
+          el.innerHTML = `
+            <div class="card-user">
+              <div class="card-avatar">${row.name.substring(0, 2).toUpperCase()}</div>
+              <div class="card-info">
+                <h5>${row.name}</h5>
+                <p>${row.loc} • ${row.status}</p>
+              </div>
+            </div>
+            <div class="card-price-block">
+              <span class="card-price">${row.price}</span>
+              <span class="card-status ${row.winner ? 'is-winner' : 'is-active'}">${row.winner ? 'Vencedor' : 'Participando'}</span>
+            </div>
+          `;
+          proposalsList.appendChild(el);
+        });
+        cardTransition.classList.remove('is-swapping');
+      }, 400);
+    }
+
+    let currentIndex = 0;
+    renderCard(proposalsData[0]);
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % proposalsData.length;
+      renderCard(proposalsData[currentIndex]);
+    }, 5000);
+  </script>
+</body>
+</html>
