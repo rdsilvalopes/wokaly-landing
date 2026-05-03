@@ -413,6 +413,9 @@ a { text-decoration: none; color: inherit; transition: 0.2s ease; }
 .copa-float-highlight {
   color: #10b981;
   position: relative;
+  font-weight: 800;
+  font-size: 1.1em;
+  display: inline-block;
 }
 .copa-float-highlight::after {
   content: '';
