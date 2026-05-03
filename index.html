@@ -30,12 +30,16 @@
 
   <main>
     <section class="hero">
+      <!-- Copa Float Panel -->
+      <div class="copa-float-panel" id="copa-float-panel">
+        <button class="copa-float-close" id="copa-float-close" aria-label="Fechar">&times;</button>
+        <div class="copa-float-badge">⚽ Copa 2026</div>
+        <h3 class="copa-float-title">Publique demandas<br><span class="copa-float-highlight">grátis</span> durante a Copa</h3>
+        <p class="copa-float-desc">Aproveite o torneio e encontre prestadores de serviços enquanto o Brasil joga.</p>
+        <a href="https://app.wokaly.com" class="copa-float-cta">Comece grátis →</a>
+      </div>
       <div class="container hero__grid">
         <div class="hero__content">
-          <div class="copa-banner">
-            <span class="copa-banner__icon">⚽</span>
-            <span class="copa-banner__text">Copa 2026 — Publique demandas grátis durante o torneio</span>
-          </div>
           <h1 class="hero__title">Compare, decida e escolha o orçamento ideal.</h1>
           <p class="hero__subtitle-main">Simplifique a contratação para sua empresa, hotel ou evento.</p>
           <p class="hero__subtitle hide-on-mobile">
@@ -335,6 +339,20 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Copa Float Panel - slides in from left after page load
+    const copaPanel = document.getElementById('copa-float-panel');
+    const copaClose = document.getElementById('copa-float-close');
+    if (copaPanel) {
+      setTimeout(() => {
+        copaPanel.classList.add('is-visible');
+      }, 1500);
+      copaClose.addEventListener('click', () => {
+        copaPanel.classList.remove('is-visible');
+        copaPanel.classList.add('is-exiting');
+        setTimeout(() => { copaPanel.remove(); }, 500);
+      });
+    }
     
     const proposalsData = [
       {
