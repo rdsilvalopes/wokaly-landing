@@ -6,6 +6,8 @@
   <title>Wokaly — Compare, decida e escolha o orçamento ideal</title>
   <meta name="description" content="Gestão centralizada de múltiplos prestadores de serviços. Compare orçamentos lado a lado, sem compromisso, e escolha a melhor proposta.">
   <link rel="stylesheet" href="styles.css">
+  <!-- Campaign: Copa 2026 (to disable, remove copa-2026.css + copa-2026.js) -->
+  <link rel="stylesheet" href="copa-2026.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -349,81 +351,12 @@
     </div>
   </footer>
 
+  <!-- Campaign: Copa 2026 -->
+  <script src="copa-2026.js" defer></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     
-    // Copa Float Panel — state machine
-    const copaPanel = document.getElementById('copa-float-panel');
-    const copaClose = document.getElementById('copa-float-close');
-    const copaPill = document.getElementById('copa-float-pill');
-    const copaCountdown = document.getElementById('copa-countdown');
-    let collapseTimer = null;
-    
-    if (copaPanel) {
-      // Entry: slide in after 1.5s
-      setTimeout(() => {
-        copaPanel.classList.add('is-visible');
-      }, 1500);
-      
-      // Countdown
-      const copaDate = new Date('2026-06-11T00:00:00');
-      function updateCountdown() {
-        const now = new Date();
-        const diff = copaDate - now;
-        if (copaCountdown) {
-          if (diff > 0) {
-            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            copaCountdown.innerHTML = `<span class="copa-float-countdown-label">Faltam</span> ${days}d ${hours}h <span class="copa-float-countdown-label">para a Copa</span>`;
-          } else {
-            copaCountdown.innerHTML = `<span style="color:#10b981">Ao vivo</span> <span class="copa-float-countdown-label">Copa do Mundo 2026</span>`;
-          }
-        }
-      }
-      updateCountdown();
-      setInterval(updateCountdown, 60000);
-      
-      // Auto-collapse after 25s
-      collapseTimer = setTimeout(() => {
-        if (copaPanel.classList.contains('is-visible')) {
-          copaPanel.classList.remove('is-visible');
-          copaPanel.classList.add('is-collapsing');
-          setTimeout(() => {
-            copaPanel.classList.remove('is-collapsing');
-            copaPanel.classList.add('is-collapsed');
-          }, 500);
-        }
-      }, 10000);
-      
-      // Pill click → re-expand
-      if (copaPill) {
-        copaPill.addEventListener('click', () => {
-          clearTimeout(collapseTimer);
-          copaPanel.classList.remove('is-collapsed');
-          copaPanel.classList.add('is-visible');
-          collapseTimer = setTimeout(() => {
-            if (copaPanel.classList.contains('is-visible')) {
-              copaPanel.classList.remove('is-visible');
-              copaPanel.classList.add('is-collapsing');
-              setTimeout(() => {
-                copaPanel.classList.remove('is-collapsing');
-                copaPanel.classList.add('is-collapsed');
-              }, 500);
-            }
-          }, 25000);
-        });
-      }
-      
-      // X click → permanent close
-      if (copaClose) {
-        copaClose.addEventListener('click', () => {
-          clearTimeout(collapseTimer);
-          copaPanel.classList.remove('is-visible', 'is-collapsed');
-          copaPanel.classList.add('is-exiting');
-          setTimeout(() => { copaPanel.remove(); }, 400);
-        });
-      }
-    }
+    // Campaign: Copa 2026
     
     const proposalsData = [
       {

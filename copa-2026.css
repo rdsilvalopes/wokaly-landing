@@ -1,0 +1,252 @@
+/* ════════════════════════════════════════════════════════
+   Wokaly — Copa 2026 Campaign Component
+   Plug-and-play: link this file + copa-2026.js in HTML.
+   To disable: remove both tags.
+   ════════════════════════════════════════════════════════ */
+
+.copa-float-panel {
+  position: absolute;
+  top: 100px;
+  left: 24px;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* ── Inner Card ── */
+.copa-float-inner {
+  position: relative;
+  background: var(--white, #ffffff);
+  border: 2px solid #10b981;
+  border-left: 4px solid #10b981;
+  border-radius: var(--radius-lg, 16px);
+  padding: 28px 32px 24px;
+  max-width: 340px;
+  box-shadow: 0 25px 50px -12px rgba(16, 185, 129, 0.25);
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: opacity 0.6s ease, transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+  pointer-events: none;
+}
+
+/* ── Glow Ring ── */
+.copa-float-inner::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: var(--radius-lg, 16px);
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.3), rgba(251, 191, 36, 0.2), rgba(16, 185, 129, 0.3));
+  background-size: 200% 200%;
+  animation: copa-glow-shift 3s ease-in-out infinite;
+  z-index: -1;
+  opacity: 0.6;
+}
+@keyframes copa-glow-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* ── States ── */
+.copa-float-panel.is-visible .copa-float-inner {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: all;
+}
+.copa-float-panel.is-collapsing .copa-float-inner {
+  opacity: 0;
+  transform: translateX(-40px) scale(0.95);
+  transition: opacity 0.4s ease, transform 0.5s cubic-bezier(0.4, 0, 1, 1);
+}
+.copa-float-panel.is-collapsed .copa-float-inner {
+  opacity: 0;
+  transform: translateX(-40px);
+  pointer-events: none;
+}
+.copa-float-panel.is-exiting {
+  opacity: 0;
+  transform: translateX(-120px);
+  transition: opacity 0.4s ease, transform 0.5s ease-in;
+}
+.copa-float-panel.is-exiting .copa-float-inner {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ── Close Button ── */
+.copa-float-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text-light, #94a3b8);
+  cursor: pointer;
+  line-height: 1;
+  padding: 4px;
+  transition: color 0.2s;
+  z-index: 10;
+}
+.copa-float-close:hover { color: var(--text-main, #0f172a); }
+
+/* ── Header ── */
+.copa-float-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.copa-float-ball {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #ecfdf5, #d1fae5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  animation: copa-spin 8s linear infinite;
+}
+@keyframes copa-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.copa-float-badge-text {
+  display: inline-block;
+  padding: 4px 12px;
+  background: linear-gradient(135deg, #ecfdf5, #f0fdf4);
+  border: 1px solid #86efac;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 800;
+  color: #047857;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ── Typography ── */
+.copa-float-title {
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--text-main, #0f172a);
+  line-height: 1.15;
+  margin-bottom: 10px;
+  letter-spacing: -0.02em;
+}
+.copa-float-highlight {
+  color: #10b981;
+  position: relative;
+  font-weight: 800;
+  font-size: 1.1em;
+  display: inline-block;
+}
+.copa-float-highlight::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #fbbf24;
+  border-radius: 2px;
+  opacity: 0.7;
+}
+.copa-float-desc {
+  font-size: 14px;
+  color: var(--text-muted, #475569);
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+/* ── Countdown ── */
+.copa-float-countdown {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-md, 12px);
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--brand-primary, #3753f5);
+}
+.copa-float-countdown-label {
+  font-weight: 500;
+  color: var(--text-muted, #475569);
+}
+
+/* ── CTA Button ── */
+.copa-float-cta {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #10b981;
+  color: var(--white, #ffffff);
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 9999px;
+  transition: all 0.2s;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+.copa-float-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4);
+  background: #059669;
+}
+
+/* ── Collapsed Pill ── */
+.copa-float-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  background: var(--white, #ffffff);
+  border: 2px solid #10b981;
+  border-radius: 9999px;
+  font-size: 13px;
+  font-weight: 800;
+  color: #047857;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.2);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  opacity: 0;
+  transform: scale(0.5) translateX(-20px);
+  pointer-events: none;
+}
+.copa-float-panel.is-collapsed .copa-float-pill {
+  opacity: 1;
+  transform: scale(1) translateX(0);
+  pointer-events: all;
+}
+.copa-float-pill:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 30px rgba(16, 185, 129, 0.3);
+}
+.copa-float-pill-icon {
+  display: inline-block;
+  animation: copa-spin 4s linear infinite;
+  font-size: 16px;
+}
+
+/* ════════════════════════════════════════════════════════
+   RESPONSIVE
+   ════════════════════════════════════════════════════════ */
+
+@media (max-width: 1024px) {
+  .copa-float-panel { left: 16px; top: 84px; }
+  .copa-float-inner { max-width: 280px; padding: 20px; }
+  .copa-float-title { font-size: 20px; }
+  .copa-float-pill { padding: 8px 14px; font-size: 12px; }
+}
+
+@media (max-width: 768px) {
+  .copa-float-panel { left: 12px; top: 80px; }
+  .copa-float-inner { max-width: 85vw; padding: 18px 20px; }
+  .copa-float-title { font-size: 18px; }
+  .copa-float-desc { font-size: 13px; }
+  .copa-float-cta { font-size: 13px; padding: 10px 20px; }
+  .copa-float-pill { padding: 8px 14px; font-size: 12px; }
+}
