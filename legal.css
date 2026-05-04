@@ -1,0 +1,80 @@
+/* ════════════════════════════════════════════════════════
+   Wokaly — Legal Pages (Termos e Privacidade)
+   ════════════════════════════════════════════════════════ */
+
+/* ── Legal Hero ── */
+.hero--legal .hero__grid { padding: 60px 0 40px; }
+.hero--legal .hero__title { max-width: 100%; }
+.hero--legal .hero__subtitle-main { font-size: 16px; color: var(--text-muted, #475569); font-weight: 500; }
+
+/* ── Legal Content ── */
+.legal-content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.legal-section {
+  margin-bottom: 40px;
+}
+.legal-section:last-child {
+  margin-bottom: 0;
+}
+.legal-section h2 {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text-main, #0f172a);
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--border-light, #e2e8f0);
+  letter-spacing: -0.01em;
+}
+.legal-section p {
+  font-size: 16px;
+  color: var(--text-muted, #475569);
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+.legal-section p:last-child {
+  margin-bottom: 0;
+}
+.legal-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 14px;
+}
+.legal-section ul li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: var(--text-muted, #475569);
+  line-height: 1.6;
+}
+.legal-section ul li::before {
+  content: '•';
+  position: absolute;
+  left: 8px;
+  color: var(--brand-primary, #3753f5);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+}
+.legal-section a {
+  color: var(--brand-primary, #3753f5);
+  font-weight: 600;
+  text-decoration: none;
+}
+.legal-section a:hover {
+  text-decoration: underline;
+}
+.legal-section strong {
+  color: var(--text-main, #0f172a);
+  font-weight: 700;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .legal-section h2 { font-size: 20px; }
+  .legal-section p, .legal-section ul li { font-size: 15px; }
+  .legal-content { padding: 24px 0; }
+}
